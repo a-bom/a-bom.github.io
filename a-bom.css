@@ -1,0 +1,182 @@
+
+/*  The "box-sizing: border-box" makes a browser not include the padding and border width to the actual width of the displayed element. The asterisk makes it apply to all elements.  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Verdana,Arial,sans-serif;
+  color:#005;
+}
+
+.logo {
+  float:left;
+  width:20%;
+}
+
+.heading {
+  text-align:center;
+  float:left;
+  width:80%;
+  padding:0 1.5em;
+}
+
+
+.main {
+  font-family: "Times New Roman", Times, serif;
+  font-size:110%;
+  padding: 0 1.5em;
+}
+
+h3 {
+  font-family:Verdana,Arial,sans-serif;
+  color:#005;
+}
+
+.h3annotations {
+  font-family:Verdana,Arial,sans-serif;
+  color:#005;
+  float:left;
+  margin-bottom:0em;
+}
+
+.prevnext {
+  clear:left;
+}
+
+.prevnext a {
+  font-family:Verdana,Arial,sans-serif;
+  color:#005;
+  font-size:80%;
+  text-decoration: none;
+  margin: 0em 0em 0em 1.5em;
+}
+
+.prevnext a:hover {
+  background: #ddd;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*  Set the parent <li>’s CSS position property to ‘relative’.  */
+.main-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #114;
+}
+.main-navigation ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #114;
+}
+
+/*  The CSS to hide the sub menus.  */
+.main-navigation li ul {
+  display: none;
+  z-index: 1;  /* I added this to place the dropdown in front of other elements. */
+}
+.main-navigation ul li a {
+  display: block;
+  padding: 0.5em 1em 0.5em 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+.main-navigation ul li a:hover {
+  background: #35a;
+}
+
+/*  Displays the dropdown menu on hover.  */
+.main-navigation li:hover > ul {
+  display: block;
+  position: absolute;
+}
+.main-navigation li:hover li {
+  float: none;
+}
+.main-navigation li:hover a {
+  background: #114;
+}
+.main-navigation li:hover li a:hover {
+  background: #35a;
+}
+.main-navigation li ul li {
+  border-top: 0;
+}
+
+/*  Displays second level dropdown menus to the right of the first level dropdown menu.  */
+.main-navigation ul ul ul {
+  left: 100%;
+  top: 0;
+}
+
+/*  Simple clearfix.  */
+.main-navigation ul:before, ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.main-navigation ul:after {
+  clear: both;
+}
+
+/*  For Annotation Tables  */
+#annotab {
+    border: none;
+    border-collapse: collapse;
+    clear:both;
+    margin-bottom: 1em;
+}
+#annotab tr:nth-child(odd){
+    background-color: #bdf;    
+}
+#annotab th {
+    border-bottom: 0.15em solid #c90;
+    background-color: #fff;
+    color: #114;
+    padding-bottom: 0.3em;
+}
+#annotab td {
+    padding: 0.2em 0.5em 0.3em 0.5em;
+    vertical-align:top;
+}
+
+#annotab p {
+    margin:0px;
+}
+
+/*  For footer with copyright, email, and disclaimer  */
+#footer {
+  clear:left;
+  background-color:#ddd;
+  text-align:center;
+  padding:0.5em;
+  margin-top:0.6em;
+  font-size:85%;"
+}
+
+
+
+/*
+++++++++++
+This was used to put side menu on top at 800px or lower. Do I still want this?
+++++++++++
+*/
+@media only screen and (max-width:800px) {
+  /* For mobile phones: */
+  .sidemenu, .main {
+    width:100%;
+  }
+  .heading, 
+    width:80%
+  }  
+.logo {
+    width:20%
+  }
+}
+
