@@ -9,9 +9,28 @@ body {
   color:#005;
 }
 
+
+.logoheading {
+    background-color:#BDF;
+    padding:8px;
+}
+.logoheading::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
 .logo {
   float:left;
   width:20%;
+}
+.logo img {
+  float:left;
+  margin: 1.5em 0em 0em 0em;
+  width:100%;
+  height:100%;
+  max-width:216px;
+  object-fit:contain;
 }
 
 .heading {
@@ -20,7 +39,14 @@ body {
   width:80%;
   padding:0 1.5em;
 }
+.heading h1 {
+  overflow: hidden;
+  padding-left: 8px;
+}
 
+.subtitle {
+  font-size:55%;
+}
 
 .main {
   font-family: "Times New Roman", Times, serif;
@@ -56,11 +82,6 @@ h3 {
   background: #ddd;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
 /*  Set the parent <li>’s CSS position property to ‘relative’.  */
 .main-navigation ul {
@@ -131,6 +152,7 @@ h3 {
     border-collapse: collapse;
     clear:both;
     margin-bottom: 1em;
+    width:100%;
 }
 #annotab tr:nth-child(odd){
     background-color: #bdf;    
@@ -140,15 +162,34 @@ h3 {
     background-color: #fff;
     color: #114;
     padding-bottom: 0.3em;
+    width:50%;
 }
 #annotab td {
     padding: 0.2em 0.5em 0.3em 0.5em;
     vertical-align:top;
+    width:50%;
 }
-
 #annotab p {
     margin:0px;
 }
+#annotab a {
+/*  This code set a max width for hyperlinks and put ellipses at the end where there was over-run. The max width of 10em seemed about equal to 180px on my desktop. */
+/*     margin-bottom: -0.3em;
+    display: inline-block;
+    max-width: 10em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;  */
+/*  The following allows for line breaking and inserts hyphens when and where appropriate. Not sure I like this better  */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+
 
 /*  For footer with copyright, email, and disclaimer  */
 #footer {
