@@ -28,9 +28,8 @@ body {
   float:left;
   margin: 1.8em 0em 0em 0em;
   width:100%;
-  height:100%;
   max-width:216px;
-  object-fit:contain;
+  height:75px;
 }
 
 .heading {
