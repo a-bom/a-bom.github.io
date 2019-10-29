@@ -191,22 +191,18 @@ h3 {
     hyphens: auto;
 }
 
-/*  For "study" image above copyright on index.html  */
-#study {
-   width:100%;
-  margin-bottom:-0.7em;
-}
-
 /*  For footer with copyright, email, and disclaimer  */
 #footer {
   clear:left;
   background-color:#ddd;
   text-align:center;
-  padding:0.5em;
+  padding:0em 0em 0.5em 0em;
   margin-top:0.6em;
   font-size:85%;"
 }
-
+#footer img {
+  width:100%;
+}
 
 
 /*
