@@ -67,12 +67,15 @@ h3 {
 
 .prevnext {
   clear:left;
-}
-
-.prevnext a {
   font-family:Verdana,Arial,sans-serif;
   color:#005;
   font-size:80%;
+}
+
+.prevnext a {
+/*  font-family:Verdana,Arial,sans-serif;
+  color:#005;
+  font-size:80%;  */
   text-decoration: none;
   margin: 0em 0em 0em 1.5em;
 }
@@ -188,7 +191,11 @@ h3 {
     hyphens: auto;
 }
 
-
+/*  For "study" image above copyright on index.html  */
+#study {
+   width:100%;
+  margin-bottom:-0.7em;
+}
 
 /*  For footer with copyright, email, and disclaimer  */
 #footer {
