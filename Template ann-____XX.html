@@ -9,9 +9,8 @@
 
 <link rel="stylesheet" type="text/css" href="a-bom.css">
 
-<!--  This is for favicons.  -->
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
+<!-- Favicon stuff -->
 <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
 <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -29,6 +28,8 @@
 <meta name="msapplication-TileColor" content="#ffffff">
 <meta name="msapplication-TileImage" content="ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
+
+<link rel="shortcut icon" href="favicon.ico">
 
 <style>
 
@@ -378,27 +379,27 @@
 
   <div class="main">
     <div>
-      <h3 class="h3annotations"><!-- Insert heading or chapter name here like "1 Nephi Chapter 1" --></h3>
+      <h3 class="h3annotations"><!-- Insert heading or chapter name here like "1 Nephi Chapter 1" but if non-anno page, remove the .h3annotations in this line and remove the .prevnext and previous and next links below; for example index page has texts in p elements right after this h3 --></h3>
       <p class="prevnext">
-      <a href="#">&laquo; Previous</a> <!-- Insert file name of previous page file where "#" is or delete or hide entire .prevnext if not an annotation file -->
-      <a href="#">Next &raquo;</a> <!-- Insert file name of next page file where "#" is or delete or hide entire .prevnext if not an annotation file -->
+      <a href="#">&laquo; Previous</a> <!-- Insert file name of previous page file replacing # sign -->
+      <a href="#">Next &raquo;</a> <!-- Insert file name of next page file replacing # sign -->
       </p>
     </div>
 
-<table id="annotab">
+<table id="annotab"> 
   <tr>
     <th>Book of Mormon</th>
     <th>Annotations</th>
   </tr>
 
- <!--Insert table code here but make sure the above table element is used with id="annotab" or if its a non-annotation page, delete table and include text with proper html elements -->
+ <!--Insert table code here but make sure the above table element is used with id="annotab" or if its a non-annotation page, delete table altogether -->
 
 </table>
 
 <p class="prevnext">
-      <a href="#">&laquo; Previous</a> <!-- Insert file name of previous page file where "#" is or delete or hide entire .prevnext if not an annotation file -->
-      &nbsp;&nbsp;&nbsp; 1 Ne 1
-      <a href="#">Next &raquo;</a> <!-- Insert file name of previous page file where "#" is or delete or hide entire .prevnext if not an annotation file -->
+      <a href="#">&laquo; Previous</a> <!-- Insert file name of previous page file replacing # sign -->
+      &nbsp;&nbsp;&nbsp; 1 Ne 1 <!-- Insert correct chapter name in this line abbreviated as apprpropriate -->
+      <a href="#">Next &raquo;</a> <!-- Insert file name of previous page file replacing # sign -->
 </p>
 
 </div>
