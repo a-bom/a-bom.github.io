@@ -10,37 +10,31 @@ body {
 }
 
 
-.logoheading {
-    background-color:#BDF;
-    padding:8px;
+.heading {
+    background-image: url('study.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:#114;
+    color: #fff;
+    padding: 0.5em 0em;
 }
-.logoheading::after {
+.heading::after {
     content: "";
     clear: both;
     display: table;
 }
 
-.logo {
-  float:left;
-  width:30%;
-}
-.logo img {
-  float:left;
-  margin: 1.8em 0em 0em 0em;
-  width:100%;
-  max-width:216px;
-  height:75px;
-}
 
-.heading {
+.title {
   text-align:center;
   float:left;
-  width:70%;
+  width:100%;
   padding:0 0.5em;
 }
-.heading h1 {
+.title h1 {
   overflow: hidden;
-/*  padding-left: 8px;  */
+/*  padding: 8px;  */
 }
 
 .subtitle {
@@ -193,15 +187,12 @@ h3 {
 
 /*  For footer with copyright, email, and disclaimer  */
 #footer {
-  clear:left;
+  clear:both;
   background-color:#cde;
   text-align:center;
-  padding:0em 0em 0.5em 0em;
+  padding:0.5em 0em 0.5em 0em;
   margin-top:0.6em;
   font-size:85%;"
-}
-#footer img {
-  width:100%;
 }
 
 
