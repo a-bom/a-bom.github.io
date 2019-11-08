@@ -34,11 +34,10 @@ body {
 }
 .title h1 {
   overflow: hidden;
-/*  padding: 8px;  */
 }
 
 .subtitle {
-  font-size:55%;
+  font-size:58%;
 }
 
 .main {
@@ -49,12 +48,10 @@ body {
 
 h3 {
   font-family:Verdana,Arial,sans-serif;
-  color:#005;
 }
 
 .h3annotations {
   font-family:Verdana,Arial,sans-serif;
-  color:#005;
   float:left;
   margin-bottom:0em;
 }
@@ -62,14 +59,10 @@ h3 {
 .prevnext {
   clear:left;
   font-family:Verdana,Arial,sans-serif;
-  color:#005;
   font-size:80%;
 }
 
 .prevnext a {
-/*  font-family:Verdana,Arial,sans-serif;
-  color:#005;
-  font-size:80%;  */
   text-decoration: none;
   margin: 0em 0em 0em 1.5em;
 }
@@ -84,13 +77,13 @@ h3 {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: #114;
+  background: #113;
 }
 .main-navigation ul li {
   display: block;
   position: relative;
   float: left;
-  background: #114;
+  background: #113;
 }
 
 /*  The CSS to hide the sub menus.  */
@@ -106,7 +99,7 @@ h3 {
   color: #fff;
 }
 .main-navigation ul li a:hover {
-  background: #35a;
+  background: #46a;
 }
 
 /*  Displays the dropdown menu on hover.  */
@@ -118,10 +111,10 @@ h3 {
   float: none;
 }
 .main-navigation li:hover a {
-  background: #114;
+  background: #235;
 }
 .main-navigation li:hover li a:hover {
-  background: #35a;
+  background: #46a;
 }
 .main-navigation li ul li {
   border-top: 0;
@@ -151,7 +144,7 @@ h3 {
     width:100%;
 }
 #annotab tr:nth-child(odd){
-    background-color: #bdf;    
+    background-color: #dcf0ff;    
 }
 #annotab th {
     border-bottom: 0.15em solid #c90;
@@ -193,6 +186,13 @@ h3 {
   padding:0.5em 0em 0.5em 0em;
   margin-top:0.6em;
   font-size:85%;"
+}
+
+figcaption {
+  font-family:Verdana,Arial,sans-serif;
+  color:#005;
+  font-size: 75%;
+  padding: 0em 1em 1em 1em;
 }
 
 
