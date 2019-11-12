@@ -15,7 +15,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    background-color:#114;
+    background-color:#124;
     color: #fff;
     padding: 0.5em 0em;
 }
@@ -77,13 +77,13 @@ h3 {
   list-style: none;
   padding: 0;
   margin: 0;
-  background: #113;
+  background: #124;
 }
 .main-navigation ul li {
   display: block;
   position: relative;
   float: left;
-  background: #113;
+  background: #124;
 }
 
 /*  The CSS to hide the sub menus.  */
@@ -111,7 +111,7 @@ h3 {
   float: none;
 }
 .main-navigation li:hover a {
-  background: #235;
+  background: #236;
 }
 .main-navigation li:hover li a:hover {
   background: #46a;
