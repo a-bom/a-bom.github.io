@@ -19,7 +19,6 @@ body {
     color: #fff;
     text-shadow: 0 0 5px #005;
     padding: 0.5em 0em;
-    border: 1px solid green;
 }
 .heading::after {
     content: "";
