@@ -17,7 +17,9 @@ body {
     background-position: center;
     background-color:#124;
     color: #fff;
+    text-shadow: 0 0 5px #005;
     padding: 0.5em 0em;
+    border: 1px solid green;
 }
 .heading::after {
     content: "";
@@ -111,7 +113,7 @@ h3 {
   float: none;
 }
 .main-navigation li:hover a {
-  background: #236;
+  background: #247;
 }
 .main-navigation li:hover li a:hover {
   background: #46a;
