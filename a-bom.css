@@ -17,7 +17,7 @@ body {
     background-position: center;
     background-color:#124;
     color: #fff;
-    text-shadow: 0 0 5px #005;
+    text-shadow: 0 0 5px #004;
     padding: 0.5em 0em;
 }
 .heading::after {
