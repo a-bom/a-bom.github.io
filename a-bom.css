@@ -84,7 +84,6 @@ h3 {
   display: block;
   position: relative;
   float: left;
-  background: #124;
 }
 
 /*  The CSS to hide the sub menus.  */
@@ -99,9 +98,6 @@ h3 {
   white-space: nowrap;
   color: #fff;
 }
-.main-navigation ul li a:hover {
-  background: #46a;
-}
 
 /*  Displays the dropdown menu on hover.  */
 .main-navigation li:hover > ul {
@@ -111,11 +107,20 @@ h3 {
 .main-navigation li:hover li {
   float: none;
 }
-.main-navigation li:hover a {
+
+/* When you float over 1st level item, that item and 2nd level of it go shade lighter */
+.main-navigation li:hover, .main-navigation li:hover li {
   background: #247;
 }
-.main-navigation li:hover li a:hover {
-  background: #46a;
+
+/* When you float over 2nd level item, that item and 3rd level of it go shade lighter */
+.main-navigation li li:hover, .main-navigation li li:hover li {
+  background: #36a;
+}
+
+/* When you float over 3rd level item, it goes shade lighter */
+.main-navigation li li li:hover {
+  background: #48d;
 }
 .main-navigation li ul li {
   border-top: 0;
