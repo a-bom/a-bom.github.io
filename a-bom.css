@@ -73,25 +73,26 @@ h3 {
 }
 
 
-/*  Set the parent <li>’s CSS position property to ‘relative’.  */
-.main-navigation ul {
-  list-style: none;
+
+#main_nav ul {
   padding: 0;
   margin: 0;
   background: #124;
-}
-.main-navigation ul li {
-  display: block;
-  position: relative;
-  float: left;
+  /*  next 2 lines soften the transition between lists  */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
-/*  The CSS to hide the sub menus.  */
-.main-navigation li ul {
-  display: none;
-  z-index: 1;  /* I added this to place the dropdown in front of other elements. */
+#main_nav li {
+  float: left;
+  position: relative;  /*  Set to ‘relative’ to keep next to parent.  */
+  list-style: none;
+  /*  next 2 lines soften the transition between lists  */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
-.main-navigation ul li a {
+
+#main_nav a {
   display: block;
   padding: 0.5em 1em 0.5em 1em;
   text-decoration: none;
@@ -99,45 +100,54 @@ h3 {
   color: #fff;
 }
 
-/*  Displays the dropdown menu on hover.  */
-.main-navigation li:hover > ul {
-  display: block;
+/* Hides ul within ul in the class, so 2nd and 3rd level hidden */
+#main_nav ul ul {
   position: absolute;
+  left: 0;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;  /* Places the dropdown in front of other elements of menu. */
 }
-.main-navigation li:hover li {
+
+/*  Displays the dropdown menu on hover.  */
+#main_nav li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Keeps the sub lists from floating left and not filling entire width of element */
+#main_nav li:hover li {
   float: none;
 }
 
-/* When you float over 1st level item, that item and 2nd level of it go shade lighter */
-.main-navigation li:hover, .main-navigation li:hover li {
+/* When you hover over 1st level item, that item and 2nd level of it go shade lighter */
+#main_nav li:hover, #main_nav li:hover li {
   background: #247;
 }
 
-/* When you float over 2nd level item, that item and 3rd level of it go shade lighter */
-.main-navigation li li:hover, .main-navigation li li:hover li {
+/* When you hover over 2nd level item, that item and 3rd level of it go shade lighter */
+#main_nav li li:hover, #main_nav li li:hover li {
   background: #36a;
 }
 
-/* When you float over 3rd level item, it goes shade lighter */
-.main-navigation li li li:hover {
+/* When you hover over 3rd level item, it goes shade lighter */
+#main_nav li li li:hover {
   background: #48d;
-}
-.main-navigation li ul li {
-  border-top: 0;
 }
 
 /*  Displays second level dropdown menus to the right of the first level dropdown menu.  */
-.main-navigation ul ul ul {
+#main_nav ul ul ul {
   left: 100%;
   top: 0;
 }
 
 /*  Simple clearfix.  */
-.main-navigation ul:before, ul:after {
+#main_nav ul:before, ul:after {
   content: " "; /* 1 */
   display: table; /* 2 */
 }
-.main-navigation ul:after {
+#main_nav ul:after {
   clear: both;
 }
 
