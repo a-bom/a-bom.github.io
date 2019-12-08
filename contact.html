@@ -379,8 +379,7 @@
 
 
 
-<iframe id="contact" src="https://docs.google.com/forms/d/e/1FAIpQLSc01-yOyyTlPshhlEXcBeB8hopvaHBMt4TpP2WntGIIxvu2NA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-	  <script>jQuery('iframe').load(function(){jQuery('html,body').animate({scrollTop: 0}, 'slow');});</script>
+<iframe id="contact" src="https://docs.google.com/forms/d/e/1FAIpQLSc01-yOyyTlPshhlEXcBeB8hopvaHBMt4TpP2WntGIIxvu2NA/viewform?embedded=true" onload="if(window.myFrameChange !== undefined) {window.parent.document.getElementById('contact').scrollIntoView();}window.myFrameChange=true;" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
   </div>
 
