@@ -85,8 +85,8 @@ h3 {
   position: relative;  /*  Set to ‘relative’ to keep next to parent.  */
   list-style: none;
   /*  next 2 lines soften the transition between lists  */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 #main_nav a {
@@ -112,8 +112,8 @@ h3 {
   visibility: visible;
   opacity: 1;
   /*  next 2 lines soften the transition between lists  */
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 /* Keeps the sub lists from floating left and not filling entire width of element */
@@ -140,6 +140,8 @@ h3 {
 #main_nav ul ul ul {
   left: 100%;
   top: 0;
+/*  max-height: 250px;
+  overflow: auto;  */
 }
 
 /*  Simple clearfix.  */
@@ -179,19 +181,19 @@ h3 {
 }
 #annotab a {
 /*  This code set a max width for hyperlinks and put ellipses at the end where there was over-run. The max width of 10em seemed about equal to 180px on my desktop. */
-/*     margin-bottom: -0.3em;
+    margin-bottom: -0.3em;
     display: inline-block;
     max-width: 10em;
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;  */
+    text-overflow: ellipsis;
 /*  The following allows for line breaking and inserts hyphens when and where appropriate. Not sure I like this better  */
-    overflow-wrap: break-word;
+/*    overflow-wrap: break-word;
     word-wrap: break-word;
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
-    hyphens: auto;
+    hyphens: auto;  */
 }
 
 /*  For footer with copyright, email, and disclaimer  */
@@ -241,6 +243,30 @@ figcaption {
   .columns2 {
     width: 100%;
   }
+}
+
+blockquote {
+     font-style: italic;
+/*     background-color: #dcf0ff;
+     border: 2px solid #ccc;
+     border-radius: 6px;
+     box-shadow: 3px 3px 3px #ccc;  */
+     margin: 10px;
+     padding: .5em 1em;
+     quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    content: "\201C";
+    font-size: 60px;
+}
+blockquote cite {
+     color: #666;
+     display: block;
+     margin-top: 5px;
+     font-style: normal;
 }
 
 /*
