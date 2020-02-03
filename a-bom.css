@@ -1,4 +1,4 @@
-
+﻿
 /*  The "box-sizing: border-box" makes a browser not include the padding and border width to the actual width of the displayed element. The asterisk makes it apply to all elements.  */
 * {
   box-sizing: border-box;
@@ -8,7 +8,6 @@ body {
   font-family:Verdana,Arial,sans-serif;
   color:#005;
 }
-
 
 .heading {
     background-image: url('study.png');
@@ -47,6 +46,13 @@ body {
   padding: 0 1.5em;
 }
 
+.maincfm {
+  font-family: "Times New Roman", Times, serif;
+  font-size:110%;
+  padding: 0 1.5em;
+  width: 50%;
+}
+
 h3 {
   font-family:Verdana,Arial,sans-serif;
 }
@@ -72,6 +78,10 @@ h3 {
   background: #ddd;
 }
 
+.cfmquest {
+  font-size:150%;
+  
+}
 
 
 #main_nav ul {
@@ -276,7 +286,7 @@ This was used to put side menu on top at 800px or lower. Do I still want this?
 */
 @media only screen and (max-width:800px) {
   /* For mobile phones: */
-  .sidemenu, .main {
+  .sidemenu, .main, .maincfm {
     width:100%;
   }
   .heading, 
