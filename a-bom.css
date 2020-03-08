@@ -53,6 +53,15 @@ body {
   width: 50%;
 }
 
+/* Responsive layout - makes stretch out to 100% of screen width of 800px or smaller */
+@media only screen and (max-width:800px) {
+  /* For mobile phones: */
+  .maincfm {
+    width:100%;
+  }
+}
+
+
 h3 {
   font-family:Verdana,Arial,sans-serif;
 }
@@ -79,8 +88,8 @@ h3 {
 }
 
 .cfmquest {
-  font-size:150%;
-  
+  font-size: 150%;
+  font-weight: bold;  
 }
 
 
@@ -162,6 +171,22 @@ h3 {
 #main_nav ul:after {
   clear: both;
 }
+
+#search-box {
+  float:right;
+  width:400px;
+  position:relative;
+  top:0px;
+}
+
+/* Responsive layout - makes stretch out to 100% of screen width of 600px or smaller */
+@media screen and (max-width: 600px) {
+  #search-box {
+    width: 100%;
+  }
+}
+
+
 
 /*  For Annotation Tables  */
 #annotab {
@@ -255,6 +280,8 @@ figcaption {
   }
 }
 
+
+
 blockquote {
      font-style: italic;
 /*     background-color: #dcf0ff;
@@ -279,20 +306,3 @@ blockquote cite {
      font-style: normal;
 }
 
-/*
-++++++++++
-This was used to put side menu on top at 800px or lower. Do I still want this?
-++++++++++
-*/
-@media only screen and (max-width:800px) {
-  /* For mobile phones: */
-  .sidemenu, .main, .maincfm {
-    width:100%;
-  }
-  .heading, 
-    width:70%
-  }  
-.logo {
-    width:30%
-  }
-}
