@@ -172,19 +172,27 @@ h3 {
   clear: both;
 }
 
+#fbicon {
+  float:right;
+  margin:-0.1em 1.5em 0.2em 0em;
+  width:28px;
+  height:25px;
+}
+
 #search-box {
   float:right;
-  width:400px;
+  max-width:400px;
+  width:80%;
   position:relative;
   top:0px;
 }
 
-/* Responsive layout - makes stretch out to 100% of screen width of 600px or smaller */
+/* Responsive layout - makes stretch out to 100% of screen width of 600px or smaller 
 @media screen and (max-width: 600px) {
   #search-box {
     width: 100%;
   }
-}
+} */
 
 
 
