@@ -46,6 +46,19 @@ body {
   padding: 0 1.5em;
 }
 
+#dedicate {
+     font-style: italic;
+     background-color: #def;
+     border: 2px solid #aaa;
+     border-radius: 10px;
+     box-shadow: 3px 3px 3px #aaa;
+     margin: 0em 1em 1em 1em;
+     padding: 1em;
+     float: right;
+     width: 30%;
+     min-width: 150px;
+}
+
 .maincfm {
   font-family: "Times New Roman", Times, serif;
   font-size:110%;
