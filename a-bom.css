@@ -121,7 +121,7 @@ h3 {
   transition: 0.3s;
 }
 
-#main_nav a {
+#main_nav li a {
   display: block;
   padding: 0.5em 1em 0.5em 1em;
   text-decoration: none;
@@ -199,6 +199,7 @@ h3 {
   position:relative;
   top:0px;
 }
+
 
 /* Responsive layout - makes stretch out to 100% of screen width of 600px or smaller 
 @media screen and (max-width: 600px) {
