@@ -328,3 +328,23 @@ blockquote cite {
      font-style: normal;
 }
 
+
+/* Two column table; align left in 1st col, align right in 2nd col.; no borders */
+.tabdata2 {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0em 0em 1em 1em;
+}
+.tabdata2 th:nth-child(1), .tabdata2 td:nth-child(1) { 
+  text-align: right;
+  border: 1px solid #ccc;
+  padding: 0.2em;
+} 
+.tabdata2 th:nth-child(2), .tabdata2 td:nth-child(2) {
+  text-align: left; /* "center" is another alignment option */
+  border: 1px solid #ccc;
+  padding: 0.2em;
+} 
+.tabdata2 .sumrow {
+  font-weight: bold;
+}
