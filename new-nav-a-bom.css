@@ -108,7 +108,7 @@ h3 {
 
 #main_nav {
     position: -webkit-sticky;
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 1;
 }
@@ -117,6 +117,7 @@ h3 {
   padding: 0;
   margin: 0;
   background: #124;
+  position: relative;
 }
 
 #main_nav li {
@@ -132,7 +133,7 @@ h3 {
   display: block;
   padding: 0.5em 1em 0.5em 1em;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: nowrap;  /* This forces the menu items to remain on one line/not wrap */
   color: #fff;
 }
 
@@ -165,8 +166,8 @@ h3 {
   background: #247;
 }
 
-/* When you hover over 2nd level item, that item and 3rd level of it go shade lighter */
-#main_nav li li:hover, #main_nav li li:hover li {
+/* When you hover over 2nd level item, that item and 3rd level of it go to this lighter shade */
+#main_nav li li:hover, #main_nav li li:hover li, #main_nav ul ul ul {
   background: #36a;
 }
 
@@ -178,9 +179,9 @@ h3 {
 /*  Displays second level dropdown menus to the right of the first level dropdown menu.  */
 #main_nav ul ul ul {
   left: 100%;
-  top: 0;
-/*  max-height: 250px;
-  overflow: auto;  */
+  top: 0%;
+  max-height: 185px;
+  overflow: auto;
 }
 
 /*  Simple clearfix.  */
