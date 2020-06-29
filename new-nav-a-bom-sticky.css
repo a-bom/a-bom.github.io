@@ -66,14 +66,6 @@ body {
   width: 50%;
 }
 
-/* Responsive layout - makes stretch out to 100% of screen width of 800px or smaller */
-@media only screen and (max-width:800px) {
-  /* For mobile phones: */
-  .maincfm {
-    width:100%;
-  }
-}
-
 
 h3 {
   font-family:Verdana,Arial,sans-serif;
@@ -180,7 +172,8 @@ h3 {
 #main_nav ul ul ul {
   left: 100%;
   top: 0%;
-  max-height: 185px;
+  max-height: 195px;
+  overflow: -webkit-overflow-scrolling:touch;
   overflow: auto;
 }
 
@@ -359,3 +352,22 @@ blockquote cite {
   background: #abd;
 }
 
+
+/* Responsive layout - for smaller devices */
+@media only screen and (max-width:800px) {
+  .maincfm {
+    width:100%;
+  }
+  #main_nav {
+    position: -webkit-relative;
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 7px;
+}
