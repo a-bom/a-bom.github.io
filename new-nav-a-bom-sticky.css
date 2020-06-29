@@ -369,5 +369,10 @@ blockquote cite {
 
 ::-webkit-scrollbar {
     -webkit-appearance: none;
-    width: 7px;
+    width: 8px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0,0,0,.8);
+    box-shadow: 0 0 3px rgba(255,255,255,1);
 }
