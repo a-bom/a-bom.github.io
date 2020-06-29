@@ -107,7 +107,8 @@ h3 {
 
 
 #main_nav {
-    position: relative;
+    position: -webkit-sticky;
+    position: sticky;
     top: 0;
     z-index: 1;
 }
