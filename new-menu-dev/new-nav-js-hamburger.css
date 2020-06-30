@@ -1,0 +1,427 @@
+﻿
+/*  The "box-sizing: border-box" makes a browser not include the padding and border width to the actual width of the displayed element. The asterisk makes it apply to all elements.  */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Verdana,Arial,sans-serif;
+  color:#005;
+}
+
+.heading {
+    background-image: url('study.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color:#124;
+    color: #fff;
+    text-shadow: 0 0 5px #004;
+    padding: 0.5em 0em;
+}
+.heading::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.title {
+  text-align:center;
+  float:left;
+  width:100%;
+  padding:0 0.5em;
+}
+.title h1 {
+  overflow: hidden;
+}
+
+.subtitle {
+  font-size:58%;
+}
+
+.main {
+  font-family: "Times New Roman", Times, serif;
+  font-size:110%;
+  padding: 0 1.5em;
+}
+
+#dedicate {
+     font-style: italic;
+     background-color: #def;
+     border: 2px solid #aaa;
+     border-radius: 10px;
+     box-shadow: 3px 3px 3px #aaa;
+     margin: 0em 1em 1em 1em;
+     padding: 1em;
+     float: right;
+     width: 30%;
+     min-width: 150px;
+}
+
+.maincfm {
+  font-family: "Times New Roman", Times, serif;
+  font-size:110%;
+  padding: 0 1.5em;
+  width: 50%;
+}
+
+
+h3 {
+  font-family:Verdana,Arial,sans-serif;
+}
+
+.h3annotations {
+  font-family:Verdana,Arial,sans-serif;
+  float:left;
+  margin-bottom:0em;
+}
+
+.prevnext {
+  clear:left;
+  font-family:Verdana,Arial,sans-serif;
+  font-size:80%;
+}
+
+.prevnext a {
+  text-decoration: none;
+  margin: 0em 0em 0em 1.5em;
+}
+
+.prevnext a:hover {
+  background: #ddd;
+}
+
+.cfmquest {
+  font-size: 150%;
+  font-weight: bold;  
+}
+
+
+
+#menu {
+    background-color: #124;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/*  Simple clearfix.  */
+#menu:before, #menu:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+#menu:after {
+  clear: both;
+}
+
+
+#main_nav {
+    width: 100%;
+    display: none;
+/*    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1; */
+}
+
+#main_nav ul {
+  padding: 0;
+  margin: 0;
+  background: #124;
+  position: relative;
+}
+
+#main_nav li {
+  float: left;
+  position: relative;  /*  Set to ‘relative’ to keep next to parent.  */
+  list-style: none;
+  /*  next 2 lines soften the transition between lists  */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#main_nav li a {
+  display: block;
+  padding: 0.5em 1em 0.5em 1em;
+  text-decoration: none;
+  white-space: nowrap;  /* This forces the menu items to remain on one line/not wrap */
+  color: #fff;
+}
+
+/* Hides ul within ul in the class, so 2nd and 3rd level hidden */
+#main_nav ul ul {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 2;  /* Places the dropdown in front of other elements of menu. */
+}
+
+/*  Displays the dropdown menu on hover.  */
+#main_nav li:hover > ul {
+  visibility: visible;
+  opacity: 1;
+  /*  next 2 lines soften the transition between lists  */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Keeps the sub lists from floating left and not filling entire width of element */
+#main_nav li:hover li {
+  float: none;
+}
+
+/* When you hover over 1st level item, that item and 2nd level of it go shade lighter */
+#main_nav li:hover, #main_nav li:hover li {
+  background: #247;
+}
+
+/* When you hover over 2nd level item, that item and 3rd level of it go to this lighter shade */
+#main_nav li li:hover, #main_nav li li:hover li, #main_nav ul ul ul {
+  background: #36a;
+}
+
+/* When you hover over 3rd level item, it goes shade lighter */
+#main_nav li li li:hover {
+  background: #48d;
+}
+
+/*  Displays second level dropdown menus to the right of the first level dropdown menu.  */
+#main_nav ul ul ul {
+  left: 100%;
+  top: 0%;
+  max-height: 200px;
+  overflow: -webkit-overflow-scrolling:touch;
+  overflow: auto;
+}
+
+/*  Simple clearfix.  */
+#main_nav ul:before, ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+#main_nav ul:after {
+  clear: both;
+}
+
+
+#main_nav #fbicon {
+  float:right;
+  margin:0.0em 0.7em 0em 0em;
+  background: none;
+}
+
+#main_nav #fbicon a {
+  padding: 0.35em 0em 0em 0em;
+}
+
+
+
+#container {
+    background-color: #124;
+    float: left;
+    padding: .5em 1em .5em 1em;
+/*    display: inline-block;
+    overflow: visible; */
+    cursor: pointer;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#menu #container:hover {
+    background-color: #247;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.bar1 {
+    margin: 1px 0px 3px 0px;
+}
+
+.bar2 {
+    margin: 3px 0px 3px 0px;
+}
+
+.bar3 {
+    margin: 3px 0px 3px 0px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  margin: 3px 0px 3px 0px;
+  -webkit-transform: rotate(45deg) translate(-4px, -4px);
+  transform: rotate(45deg) translate(-4.5px, -4.5px);
+}
+
+
+#search-box {
+  float:right;
+  max-width:400px;
+  width:80%;
+  position:relative;
+}
+
+
+/*  For Annotation Tables  */
+#annotab {
+    border: none;
+    border-collapse: collapse;
+    clear:both;
+    margin-bottom: 1em;
+    width:100%;
+}
+#annotab tr:nth-child(odd){
+    background-color: #dcf0ff;    
+}
+#annotab th {
+    border-bottom: 0.15em solid #c90;
+    background-color: #fff;
+    color: #114;
+    padding-bottom: 0.3em;
+    width:50%;
+}
+#annotab td {
+    padding: 0.2em 0.5em 0.3em 0.5em;
+    vertical-align:top;
+    width:50%;
+}
+#annotab p {
+    margin:0px;
+}
+#annotab a {
+/*  This code set a max width for hyperlinks and put ellipses at the end where there was over-run. The max width of 10em seemed about equal to 180px on my desktop. */
+    margin-bottom: -0.3em;
+    display: inline-block;
+    max-width: 10em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+/*  The following allows for line breaking and inserts hyphens when and where appropriate. Not sure I like this better  */
+/*    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;  */
+}
+
+/*  For footer with copyright, email, and disclaimer  */
+#footer {
+  clear:both;
+  background-color:#cde;
+  text-align:center;
+  padding:0.5em 0em 0.5em 0em;
+  margin-top:0.6em;
+  font-size:85%;
+}
+
+figcaption {
+  font-family:Verdana,Arial,sans-serif;
+  color:#005;
+  font-size: 75%;
+  padding: 0em 1em 1em 1em;
+}
+
+#contact {
+  width:100%;
+  max-width:800px;
+  height:900px;
+}
+
+.indent2em {
+  display: block; 
+  margin-left: 2em;
+}
+
+/* For two equal columns that floats next to each other */
+.columns2 {
+  float: left;
+  width: 50%;
+  padding: 0em 1em 1em 1em;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+blockquote {
+     font-style: italic;
+/*     background-color: #dcf0ff;
+     border: 2px solid #ccc;
+     border-radius: 6px;
+     box-shadow: 3px 3px 3px #ccc;  */
+     margin: 10px;
+     padding: .5em 1em;
+     quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+    content: "\201C";
+    font-size: 60px;
+}
+blockquote cite {
+     color: #666;
+     display: block;
+     margin-top: 5px;
+     font-style: normal;
+}
+
+
+/* Two column table; 1st and 2nd cols align left */
+.tabdata2 {
+  border-collapse: collapse;
+  margin: 0em 0em 1em 1em;
+}
+.tabdata2 th:nth-child(1), .tabdata2 td:nth-child(1) { 
+  text-align: left;
+  border: 1px solid #abd;
+  padding: 0.2em;
+} 
+.tabdata2 th:nth-child(2), .tabdata2 td:nth-child(2) {
+  text-align: center;
+  border: 1px solid #abd;
+  padding: 0.2em;
+} 
+.tabdata2 .sumrow, .tabdata2 th {
+  font-weight: bold;
+  background: #abd;
+}
+
+
+/* Responsive layout - for smaller devices */
+@media only screen and (max-width:800px) {
+  .maincfm {
+    width:100%;
+  }
+  #menu {
+    position: -webkit-relative;
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+  .columns2 {
+    width: 100%;
+  }
+}
