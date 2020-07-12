@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Prepare for Book of Mormon Come Follow Me lessons with these critical observtions and questions.">
 
-<title>Come Follow Me Index | A-BoM</title>
+<title>Come Follow Me 28 | A-BoM</title>
 
-<link rel="stylesheet" type="text/css" href="a-bom.css">
+<link rel="stylesheet" type="text/css" href="testnewmenu.css">
  
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155203506-1"></script>
@@ -45,31 +45,51 @@
 
 </head>
 
-<body><div id="main_nav">
-<ul>		
-  <li><a href="index.html">Home</a></li>		
-  <li><a>Web Annotations</a>		
-	    <ul>	
-              <li><a>Preface, Etc.</a>
+<body>
+
+<div id="menu" class="menu">
+
+<div class="container" onclick="myFunction(this)">
+  <div class="bar1"></div>
+  <div class="bar2"></div>
+  <div class="bar3"></div>
+</div>
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+  var x = document.getElementById("menu");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
+</script>
+
+
+<div id="main_nav" class="menudiv">
+
+<ul>
+  <li><a href="index.html">Home &nbsp;</a></li>
+  <li><a>Annotations <span style="line-height: 100%;">&#9662;</span></a>
+	    <ul>
+              <li><a>Front Material &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="quotestruth.html">Quotes About Truth</a></li>
 		          <li><a href="preface.html">Preface</a></li>
 		          <li><a href="othresources.html">Other Resources</a></li>
 		          <li><a href="victoryforstan.html">Use of Words Like "Mormon"</a></li>
 		          <li><a href="aboutanno.html">About the Annotator</a></li>
+		          <li><a href="titlepage.html">Title Page&ndash;Book of Mormon (BoM)</a></li>
+		          <li><a href="intro.html">Introduction&ndash;BoM</a></li>
+		          <li><a href="testof3.html">Testimony of 3 Witnesses&ndash;BoM</a></li>
+		          <li><a href="testof8.html">Testimony of 8 Witnesses&ndash;BoM</a></li>
+		          <li><a href="testofjs.html">Testimony of Joseph Smith&ndash;BoM</a></li>
+		          <li><a href="briefexplan.html">Brief Explanation&ndash;BoM</a></li>
 		        </ul>
 	      </li>
-              <li><a>Introduction & Witnesses</a>
-		        <ul>
-		          <li><a href="titlepage.html">Title Page</a></li>
-		          <li><a href="intro.html">Introduction</a></li>
-		          <li><a href="testof3.html">Testimony of 3 Witnesses</a></li>
-		          <li><a href="testof8.html">Testimony of 8 Witnesses</a></li>
-		          <li><a href="testofjs.html">Testimony of Joseph Smith</a></li>
-		          <li><a href="briefexplan.html">Brief Explanation</a></li>
-		        </ul>
-	      </li>	
-              <li><a>1 Nephi</a>
+              <li><a>1 Nephi &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="ann-1_ne01.html">Chapter 1</a></li>
 		          <li><a href="ann-1_ne02.html">Chapter 2</a></li>
@@ -83,8 +103,7 @@
 		          <li><a href="ann-1_ne10.html">Chapter 10</a></li>
 		          <li><a href="ann-1_ne11.html">Chapter 11</a></li>
 		          <li><a href="ann-1_ne12.html">Chapter 12</a></li>
-		          <li><a href="ann-1_ne13.html">Chapter 13</a></li>
-		          <li><a href="ann-1_ne14.html">Chapter 14</a></li>
+		                <li><a href="ann-1_ne14.html">Chapter 14</a></li>
 		          <li><a href="ann-1_ne15.html">Chapter 15</a></li>
 		          <li><a href="ann-1_ne16.html">Chapter 16</a></li>
 		          <li><a href="ann-1_ne17.html">Chapter 17</a></li>
@@ -94,8 +113,8 @@
 		          <li><a href="ann-1_ne21.html">Chapter 21</a></li>
 		          <li><a href="ann-1_ne22.html">Chapter 22</a></li>
 		        </ul>
-	      </li>	
-              <li><a>2 Nephi</a>
+	      </li>
+              <li><a>2 Nephi &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="ann-2_ne01.html">Chapter 1</a></li>
 		          <li><a href="ann-2_ne02.html">Chapter 2</a></li>
@@ -131,27 +150,23 @@
 		          <li><a href="ann-2_ne32.html">Chapter 32</a></li>
 		          <li><a href="ann-2_ne33.html">Chapter 33</a></li>
 		        </ul>
-	      </li>	
-              <li><a>Jacob</a>
+	      </li>
+              <li><a>Jacob&ndash;Words of Mormon &nbsp;&rsaquo;</a>
 		        <ul>
-		          <li><a href="ann-jaco01.html">Chapter 1</a></li>
-		          <li><a href="ann-jaco02.html">Chapter 2</a></li>
-		          <li><a href="ann-jaco03.html">Chapter 3</a></li>
-		          <li><a href="ann-jaco04.html">Chapter 4</a></li>
-		          <li><a href="ann-jaco05.html">Chapter 5</a></li>
-		          <li><a href="ann-jaco06.html">Chapter 6</a></li>
-		          <li><a href="ann-jaco07.html">Chapter 7</a></li>
+		          <li><a href="ann-jaco01.html">Jacob 1</a></li>
+		          <li><a href="ann-jaco02.html">Jacob 2</a></li>
+		          <li><a href="ann-jaco03.html">Jacob 3</a></li>
+		          <li><a href="ann-jaco04.html">Jacob 4</a></li>
+		          <li><a href="ann-jaco05.html">Jacob 5</a></li>
+		          <li><a href="ann-jaco06.html">Jacob 6</a></li>
+		          <li><a href="ann-jaco07.html">Jacob 7</a></li>
+		          <li><a href="ann-enos01.html">Enos</a></li>
+		          <li><a href="ann-jaro01.html">Jarom</a></li>
+		          <li><a href="ann-omni01.html">Omni</a></li>
+		          <li><a href="ann-womo01.html">Words of Mormon</a></li>
 		        </ul>
-	      </li>	
-	      <li><a href="ann-enos01.html">Enos</a>	
-	      </li>	
-	      <li><a href="ann-jaro01.html">Jarom</a>	
-	      </li>	
-	      <li><a href="ann-omni01.html">Omni</a>	
-	      </li>	
-	      <li><a href="ann-womo01.html">Words of Mormon</a>	
-	      </li>	
-              <li><a>Mosiah</a>
+	      </li>
+              <li><a>Mosiah &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="ann-mosi01.html">Chapter 1</a></li>
 		          <li><a href="ann-mosi02.html">Chapter 2</a></li>
@@ -183,8 +198,8 @@
 		          <li><a href="ann-mosi28.html">Chapter 28</a></li>
 		          <li><a href="ann-mosi29.html">Chapter 29</a></li>
 		        </ul>
-	      </li>	
-	      <li><a>Alma</a>
+	      </li>
+	      <li><a>Alma &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="ann-alma01.html">Chapter 1</a></li>
 		          <li><a href="ann-alma02.html">Chapter 2</a></li>
@@ -250,8 +265,8 @@
 		          <li><a href="ann-alma62.html">Chapter 62</a></li>
 		          <li><a href="ann-alma63.html">Chapter 63</a></li>
 		        </ul>
-	      </li>	
-              <li><a>Helaman</a>
+	      </li>
+              <li><a>Helaman &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="ann-hela01.html">Chapter 1</a></li>
 		          <li><a href="ann-hela02.html">Chapter 2</a></li>
@@ -270,8 +285,8 @@
 		          <li><a href="ann-hela15.html">Chapter 15</a></li>
 		          <li><a href="ann-hela16.html">Chapter 16</a></li>
 		        </ul>
-	      </li>	
-              <li><a>3 Nephi</a>
+	      </li>
+              <li><a>3 Nephi &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="ann-3_ne01.html">Chapter 1</a></li>
 		          <li><a href="ann-3_ne02.html">Chapter 2</a></li>
@@ -304,10 +319,10 @@
 		          <li><a href="ann-3_ne29.html">Chapter 29</a></li>
 		          <li><a href="ann-3_ne30.html">Chapter 30</a></li>
 		        </ul>
-	      </li>	
-	      <li><a href="ann-4_ne01.html">4 Nephi</a>	
-	      </li>	
-              <li><a>Mormon</a>
+	      </li>
+	      <li><a href="ann-4_ne01.html">4 Nephi</a>
+	      </li>
+              <li><a>Mormon &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="ann-morm01.html">Chapter 1</a></li>
 		          <li><a href="ann-morm02.html">Chapter 2</a></li>
@@ -319,8 +334,8 @@
 		          <li><a href="ann-morm08.html">Chapter 8</a></li>
 		          <li><a href="ann-morm09.html">Chapter 9</a></li>
 		        </ul>
-	      </li>	
-              <li><a>Ether</a>
+	      </li>
+              <li><a>Ether &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="ann-ethe01.html">Chapter 1</a></li>
 		          <li><a href="ann-ethe02.html">Chapter 2</a></li>
@@ -338,8 +353,8 @@
 		          <li><a href="ann-ethe14.html">Chapter 14</a></li>
 		          <li><a href="ann-ethe15.html">Chapter 15</a></li>
 		        </ul>
-	      </li>	
-              <li><a>Moroni</a>
+	      </li>
+              <li><a>Moroni &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="ann-moro01.html">Chapter 1</a></li>
 		          <li><a href="ann-moro02.html">Chapter 2</a></li>
@@ -351,50 +366,58 @@
 		          <li><a href="ann-moro08.html">Chapter 8</a></li>
 		          <li><a href="ann-moro09.html">Chapter 9</a></li>
 		          <li><a href="ann-moro10.html">Chapter 10</a></li>
-		          <li><a href="ann-moro10.html">Chapter 11</a></li>
 		        </ul>
-	    </ul>	
-  </li>		
-  <li><a href="downloads.html">Downloads</a>
-  </li>		
-<!--  <li><a href="index-por.html">Portuguese Version</a>
-  </li>	 -->
-  <li><a href="comefollowme00.html">If I Could Ask . . .</a>
+	    </ul>
+  </li>
+  <li><a>Other Material <span style="line-height: 100%;">&#9662;</span></a>
 	    <ul>
-	      <li><a href="comefollowme01.html">Come Follow Me, Lesson 1</a></li>
-	      <li><a href="comefollowme02.html">Come Follow Me, Lesson 2</a></li>
-	      <li><a href="comefollowme03.html">Come Follow Me, Lesson 3</a></li>
-	      <li><a href="comefollowme04.html">Come Follow Me, Lesson 4</a></li>
-	      <li><a href="comefollowme05.html">Come Follow Me, Lesson 5</a></li>
-	      <li><a href="comefollowme06.html">Come Follow Me, Lesson 6</a></li>
-	      <li><a href="comefollowme07.html">Come Follow Me, Lesson 7</a></li>
-	      <li><a href="comefollowme08.html">Come Follow Me, Lesson 8</a></li>
-	      <li><a href="comefollowme09.html">Come Follow Me, Lesson 9</a></li>
-	      <li><a href="comefollowme10.html">Come Follow Me, Lesson 10</a></li>
-	      <li><a href="comefollowme11.html">Come Follow Me, Lesson 11</a></li>
-	      <li><a href="comefollowme12.html">Come Follow Me, Lesson 12</a></li>
-	      <li><a href="comefollowme13.html">Come Follow Me, Lesson 13</a></li>
-	      <li><a href="comefollowme14.html">Come Follow Me, Lesson 14</a></li>
-	      <li><a href="comefollowme15.html">Come Follow Me, Lesson 15</a></li>
-	      <li><a href="comefollowme16.html">Come Follow Me, Lesson 16</a></li>
-	      <li><a href="comefollowme17.html">Come Follow Me, Lesson 17</a></li>
-	      <li><a href="comefollowme18.html">Come Follow Me, Lesson 18</a></li>
-	      <li><a href="comefollowme19.html">Come Follow Me, Lesson 19</a></li>
-	      <li><a href="comefollowme20.html">Come Follow Me, Lesson 20</a></li>
-	      <li><a href="comefollowme21.html">Come Follow Me, Lesson 21</a></li>
-	      <li><a href="comefollowme22.html">Come Follow Me, Lesson 22</a></li>
-	      <li><a href="comefollowme23.html">Come Follow Me, Lesson 23</a></li>
-	      <li><a href="comefollowme24.html">Come Follow Me, Lesson 24</a></li>
-	      <li><a href="comefollowme25.html">Come Follow Me, Lesson 25</a></li>
-	      <li><a href="comefollowme26.html">Come Follow Me, Lesson 26</a></li>
-	      <li><a href="comefollowme27.html">Come Follow Me, Lesson 27</a></li>
-	      <li><a href="comefollowme28.html">Come Follow Me, Lesson 28</a></li>
+	      <li><a href="downloads.html">Downloads</a>
+	      </li>
+<!--	      <li><a href="index-por.html">Portuguese Version</a>
+	      </li>	 -->
+	      <li><a>If I Could Ask &hellip; &nbsp;&rsaquo;</a>
+		        <ul>
+		          <li><a href="comefollowme00.html">About & Lesson Index</a>
+		          <li><a href="comefollowme01.html">Lesson 1</a></li>
+		          <li><a href="comefollowme02.html">Lesson 2</a></li>
+		          <li><a href="comefollowme03.html">Lesson 3</a></li>
+		          <li><a href="comefollowme04.html">Lesson 4</a></li>
+		          <li><a href="comefollowme05.html">Lesson 5</a></li>
+		          <li><a href="comefollowme06.html">Lesson 6</a></li>
+		          <li><a href="comefollowme07.html">Lesson 7</a></li>
+		          <li><a href="comefollowme08.html">Lesson 8</a></li>
+		          <li><a href="comefollowme09.html">Lesson 9</a></li>
+		          <li><a href="comefollowme10.html">Lesson 10</a></li>
+		          <li><a href="comefollowme11.html">Lesson 11</a></li>
+		          <li><a href="comefollowme12.html">Lesson 12</a></li>
+		          <li><a href="comefollowme13.html">Lesson 13</a></li>
+		          <li><a href="comefollowme14.html">Lesson 14</a></li>
+		          <li><a href="comefollowme15.html">Lesson 15</a></li>
+		          <li><a href="comefollowme16.html">Lesson 16</a></li>
+		          <li><a href="comefollowme17.html">Lesson 17</a></li>
+		          <li><a href="comefollowme18.html">Lesson 18</a></li>
+		          <li><a href="comefollowme19.html">Lesson 19</a></li>
+		          <li><a href="comefollowme20.html">Lesson 20</a></li>
+		          <li><a href="comefollowme21.html">Lesson 21</a></li>
+		          <li><a href="comefollowme22.html">Lesson 22</a></li>
+		          <li><a href="comefollowme23.html">Lesson 23</a></li>
+		          <li><a href="comefollowme24.html">Lesson 24</a></li>
+		          <li><a href="comefollowme25.html">Lesson 25</a></li>
+		          <li><a href="comefollowme26.html">Lesson 26</a></li>
+		          <li><a href="comefollowme27.html">Lesson 27</a></li>
+		          <li><a href="comefollowme28.html">Lesson 28</a></li>
+		        </ul>
+	      </li>
 	    </ul>
   </li>
   <li><a href="contact.html">Contact Us</a>
-  </li></ul>
+  </li>
+
+</ul> <!-- / of navigation list -->
 
 </div>  <!-- / #main_nav -->
+
+</div> <!-- / #menu -->
 
 <div class="heading">
   <div class="title">
@@ -408,188 +431,91 @@
 <div class="gcse-search"></div>
 </div>  <!-- / #search-box -->
 
-  <div class="main">
+<h3 style="color:#d33;"><strong>If you have a spare minute, please let us know what you think about the new navigation on this page.</strong></h3>
+<p>We’re trying out a new navigation menu at the top of this page. (All other pages on the site have the old menu.) If you have a minute to let us know what you think (especially if it’s not working well), please use our <a href="contact.html">Contact Us page</a> or email us at <a href="mailto:annotatedbom@gmail.com?subject=New%20Menu%20Feedback">annotatedbom@gmail.com</a> to let us know how the menu worked for you.</p>
+<p>Thanks, <br />
+A-BoM</p>
 
-    <h3 class="h3annotations">If I Could Ask Them One Question About The Come Follow Me Lessons . . .</h3>
-      <p class="prevnext">Index<br />
-<!--      <a href="">&laquo; Previous</a>  -->
-      <a href="comefollowme01.html">Next &raquo;</a>
+  <div class="maincfm">
+
+
+      <h3 class="h3annotations">If I could ask them one question . . .</h3>
+      <p class="prevnext">Come Follow Me, Lesson 28<br />
+      <a href="comefollowme27.html">&laquo; Previous</a>
+<!--      <a href="comefollowme29.html">Next &raquo;</a>  -->
       </p>
 
-    <div id="dedicate">To those non-believers who still attend church or sit through family discussions of the Come Follow Me lessons, this is for you. Whether you do it because you have to please the parents, because you want to support a spouse, because you just haven’t had the heart to tell loved ones, etc.; this is for you. May these posts help you feel a little more sane, and maybe, just maybe, if the timing is ever right, may these posts inspire you to ask believers you care for some questions that will help them think at least enough to help them understand you a little better.<br />
-Peace amigos
-    </div>
+
+    <p>For <a href="https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-individuals-and-families-book-of-mormon-2020/28" target="_blank">Come Follow Me, lesson 28</a>, Jul 13-19, <a href="ann-alma32.html">Alma 32-35</a></p>
 
 
-    <p>Because Mormons are supposed to be studying the Book of Mormon in their 2020 Come Follow Me lessons, I’ve put together a question associated with the lesson manual or passages from the Book of Mormon. To explain why I think a question is relevant and to deal with some of the excuses that may be used for the Book of Mormon or the lesson manual, I’ve also listed facts and observations I find relevant.</p>
 
-    <p>I hope you find them interesting. I’d love to hear any feedback, positive or negative, you may have about these posts. If you ever have the opportunity to share thoughts from these posts with believers or never-Mormons, I’d be particularly interested in hearing how they reacted. You can share your experiences and thoughts with me on our <a href="contact.html">Contact Us page</a>.
+<p>If I wanted to encourage thought and try to understand devout believers better, I might ask:</p>
+<p class="cfmquest">“Could the Alma 32 experiment lead down a bad path?”</p>
 
-<p>Have fun studying!</p>
+<p>Things to consider:</p>
+<ul>
 
-<h3 id="addendum">Questions I might ask if I wanted to encourage thought and try to understand devout believers better:</h3>
+  <li>Alma 32 teaches to experiment with the word of God using an analogy comparing the word of God to a seed planted into the “soil” of your heart. It teaches that if you tend to this seed it will sprout and swell in your heart, that eventually, if you continue to care well for the plant, it will bear good fruit. By that good fruit you will know the seed (word of God) is good.</li>
 
-	    <ol style="list-style-type:none;">
+  <li>The object is clear here. Practice the word of God to know it is good and continue this practice unto exaltation. <br />
+“&hellip; ye shall pluck the fruit thereof, which is most precious, which is sweet above all that is sweet, and which is white above all that is white, yea, and pure above all that is pure; and ye shall feast upon this fruit even until ye are filled, that ye hunger not, neither shall ye thirst” (<a href="ann-alma32.html#42">Alma 32:42</a>).</li>
 
-	      <li><a href="comefollowme01.html">Lesson 1</a><br />
-	      “Why were the golden plates needed when Joseph didn’t actually use them for the translation?”<br /><br /></li>
+  <li>What could be wrong with this? It’s an experiment, so it sounds sciency. Besides, if it doesn’t work, you can move on&mdash;no harm done. And, how could anyone complain about good fruit since it’s about following what inspires and enlightens?</li>
 
-	      <li><a href="comefollowme02.html">Lesson 2</a><br />
-	      “Why did Nephi think he had to kill a defenseless, unconscious Laban for the brass plates?”<br /><br /></li>
+  <li>Unfortunately, this experiment is about as unscientific as it gets. Science (done well) <em>should</em> involve experiments designed to minimize bias in the results and to actually try to prove a hypothesis wrong. So, let’s take a look at how Alma’s experiment compares/contrasts with this.
+    <ul>
+      <li><strong>Leverages desire for social reciprocity</strong><br /> 
+<a href="ann-alma32.html#22">Alma 32:22</a> reminds a believer of God’s mercy for believers, which suggests a debt of gratitude. As a social being, a believer in God’s mercy will want to reciprocate, so it primes a believing reader to want to do what the Lord wants, and this verse says God wants the person to believe what is claimed to be the word of God.</li>
+      <li><strong>Suggests reward for belief</strong><br /> 
+<a href="ann-alma32.html#22">Alma 32:22</a> asserts that a person who believes in God will receive God’s mercy (and the obvious correlate:  that a person who does not believe in God will not receive God’s mercy). If accepted by the reader, this could promote reward anticipation for belief or fear and guilt for disbelief. All of this, if believed to some extent, promotes a desire to believe further.</li>
+      <li><strong>Encourages sunk-cost bias</strong><br /> 
+Clearly Alma is advocating for a significant amount of effort to reap the fruit of this tree. “&hellip;if ye will nourish the word, yea, nourish the tree as it beginneth to grow, by your faith with great diligence, and with patience, looking forward to the fruit thereof, it shall take root; and behold it shall be a tree springing up unto everlasting life” (<a href="ann-alma32.html#41">Alma 32:41</a>). This goes hand-in-hand with the teaching that if the word does not swell in your heart, it is your fault (<a href="ann-alma32.html#28">Alma 32:28, 38-39</a>).</li>
+      <li><strong>Promotes motivated reasoning</strong><br /> 
+<a href="ann-alma32.html#27">Alma 32:27</a> encourages to “&hellip;exercise a particle of faith, yea, even if ye can no more than desire to believe, let this desire work in you&hellip;.”
+        <ul>
+          <li>“Motivated reasoning refers to the unconscious tendency of individuals to process information in a manner that suits some end or goal extrinsic to the formation of accurate beliefs” (<a href="http://www.culturalcognition.net/blog/2013/5/15/motivated-reasoning-its-cognates.html">Dan Kahan</a>, the Elizabeth K. Dollard Professor of Law and Professor of Psychology at Yale Law School).</li>
+          <li>As Yale neurologist Dr. Steven Novella explained, motivated reasoning
+  “is a catchall covering the suite of biases and cognitive flaws that lead
+  people to arrive at confident conclusions they wish to be true, rather than
+  objectively following facts and logic wherever it leads” (<a href="https://theness.com/neurologicablog/index.php/solution-aversion-and-motivated-reasoning">Dr. Novella</a>).</li>
+          <li>What if you applied a desire to believe to the teachings of some other religion that claims to be the only
+  true religion of God? Isn’t the following likely? “People may ultimately come
+  to believe that the weight of evidence supports the position that they
+  already wanted to believe was true.  And they will believe this without
+  recognizing that their own desires influenced the evaluation of the evidence”
+  (<a href="https://www.psychologytoday.com/us/blog/ulterior-motives/201107/you-end-believing-what-you-want-believe">Art Markman Ph.D.</a>).</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
 
-	      <li><a href="comefollowme03.html">Lesson 3</a><br />
-	      “Why do you think Lehi’s vision of the tree of life is so similar to the vision Joseph Smith Sr. had apparently 19 years prior to the Book of Mormon publishing?”<br /><br /></li>
+  <li>Rather than trying to prove the gospel false, Alma’s experiment is set up to try to prove what he teaches is good. Consider how it might work to apply all of what Alma teaches about his experiment to Islam or Catholicism. If these biases were applied with a commitment to nourish and care for the word as presented by either of these religions, isn’t it quite likely that the method would result in a swelling in the heart and ultimately desirable fruit from the resulting plant? If you don’t think it would, please do a little research on how Muslims and Catholics are inspired and uplifted by their respective religions. And, if the fruit they harvest from that experiment is so good to them, why would they even think of investing effort in nourishing the word as taught by Mormonism? I wonder if I’ll get any argument that God promotes some to follow Islam and others Catholicism. It would be interesting if a devout Mormon posited this, because that would be concluding that sometimes God inspires people to believe in and stick to religions that contradict the truth and authority claims of the Mormon Church.</li>
 
-	      <li><a href="comefollowme04.html">Lesson 4</a><br />
-	      “How might non-Mormons or Mormons who are Native Americans be affected by the Book of Mormon passages claiming Lamanites were scattered and smitten 1,000 years after their ancestors dwindled in unbelief?”<br /><br /></li>
+  <li>The idea that nourishing the seed and the resulting plant is an interesting idea, especially when you consider that bull dung can be used to nourish plants. Bull dung is a toned down version of vulgar slang that means “nonsense.” Could such dung promote a word to grow regardless of whether or not the word is actually true or whether or not it’s the best path for someone to follow?</li>
 
-	      <li><a href="comefollowme05.html">Lesson 5</a><br />
-	      “Can you think of a good reason to say there were horses in the Americas in Book of Mormon times?”<br /><br /></li>
+  <li>The analogy of treating the word of God as a seed may illustrate how mindfully practicing a principle may uplift or inspire you, but I think it provides little by way of figuring out whether a religion is God’s one and only. I would also suggest that if a particular seed doesn’t swell within your heart or provide fruit, it may be that the seed is a bad match for the soil of your heart. However, I’d bet your heart will produce an amazing harvest with a different kind of seed. May you find joy in the process of discovering what grows best in your heart, using critical thinking along the way to protect yourself.</li>
 
-	      <li><a href="comefollowme06.html">Lesson 6</a><br />
-	      “How could the Lehites be kept from all nations to have the land to themselves?”<br /><br /></li>
+</ul>
 
-	      <li><a href="comefollowme07.html">Lesson 7</a><br />
-	      “Why would an angel reveal a Greek title as a name for the Messiah to someone from Jerusalem in the Americas in about 550 BCE?”<br /><br /></li>
+<br />
+<h3 id="addendum">Other observations about this lesson’s reading:</h3>
+<ul>
+  <li>Signs are apparently bad, but evidence is good (<a href="ann-alma32.html#17">Alma 32:17-19</a>, <a href="ann-alma32.html#28">Alma 32:28-35</a>, and <a href="ann-alma32.html#38">Alma 32:38-40</a>).</li>
+  <li>The double-bind of figuring out if Mormonism is true or good (<a href="ann-alma32.html#20">Alma 32:20</a>).</li>
+  <li>Is your faith in Christ dormant (<a href="ann-alma32.html#34">Alma 32:34</a>)?</li>
+  <li>According to the Book of Mormon, the Lord dwells in your heart (<a href="ann-alma34.html#36">Alma 34:36</a>), but the D&C says He does not. Which way is it?</li>
+  <li>The conversion of the poor Zoramites somehow destroys the “craft” of the rich Zoramites (<a href="ann-alma35.html#6">Alma 35:6</a>).</li>
+  <li>The amazing flip-flopping Nephites (<a href="ann-alma35.html#15">Alma 35:15</a>).</li>
+</ul>
 
-	      <li><a href="comefollowme08.html">Lesson 8</a><br />
-	      “What do you think of the Book of Mormon rendering of Isaiah 9:1?”<br /><br /></li>
+<p>If you could ask believers questions about the scriptures for this lesson, what would you ask?</p><p>Have fun studying!</p>
 
-	      <li><a href="comefollowme09.html">Lesson 9</a><br />
-	      “Is it okay to make it difficult to understand certain things about the Church?”<br /><br /></li>
 
-	      <li><a href="comefollowme10.html">Lesson 10</a><br />
-	      “Do all believers in Christ actually believe the Words of Nephi?”<br />
-	      or<br />
-	      “Could this one weird trick let you discern if someone is really a Christian?”<br /><br /></li>
-
-	      <li><a href="comefollowme11.html">Lesson 11</a><br />
-	      “Polygamy, which way is it?”<br /><br /></li>
-
-	      <li><a href="comefollowme12.html">Lesson 12</a><br />
-	      “Why won’t they tell us if they’ve seen Christ?”<br /><br /></li>
-
-	      <li><a href="comefollowme13.html">Lesson 13</a><br />
-	      “Could it be problematic that Enos’s father taught him ‘in the nurture and admonition of the Lord’?”<br /><br /></li>
-
-	      <li><a href="comefollowme14.html">Lesson 14</a><br />
-	      “Doesn’t the crowning event of the Book of Mormon fall flat?”<br /><br /></li>
-
-	      <li><a href="comefollowme15.html">Lesson 15</a><br />
-	      “Isn’t it weird that there are no Lehite written records?”<br /><br /></li>
-
-	      <li><a href="comefollowme16.html">Lesson 16</a><br />
-	      “So, without LDS priesthood ordinances, a person does not have moral or spiritual power?”<br /><br /></li>
-
-	      <li><a href="comefollowme17.html">Lesson 17</a><br />
-	      “What do you think about neas, and sheum?”<br /><br /></li>
-
-	      <li><a href="comefollowme18.html">Lesson 18</a><br />
-	      “Doesn’t the Book of Mormon seem Trinitarian?”<br /><br /></li>
-
-	      <li><a href="comefollowme19.html">Lesson 19</a><br />
-	      “Isn’t it odd the Book of Mormon is so wordy?”<br /><br /></li>
-
-	      <li><a href="comefollowme20.html">Lesson 20</a><br />
-	      “Why don’t modern seers translate like Book of Mormon seers?”<br /><br /></li>
-
-	      <li><a href="comefollowme21.html">Lesson 21</a><br />
-	      “Doesn’t Alma the Younger seem like an Incredible?”<br /><br /></li>
-
-	      <li><a href="comefollowme22.html">Lesson 22</a><br />
-	      “Were there sheep in the Americas during Book of Mormon times?”<br /><br /></li>
-
-	      <li><a href="comefollowme23.html">Lesson 23</a><br />
-	      “Do you think the Book of Mormon helps with the problem of evil?”<br /><br /></li>
-
-	      <li><a href="ificouldask-blm.html">BLM Special Edition</a><br />
-	      “Since Black Lives Matter, why don’t we renounce Mormonism’s racist past starting with Brigham Young?”<br /><br /></li>
-
-	      <li><a href="comefollowme24.html">Lesson 24</a><br />
-	      “Why are Book of Mormon prophecies so &hellip; prophetic?”<br /><br /></li>
-
-	      <li><a href="comefollowme25.html">Lesson 25</a><br />
-	      “Can faith be harmful or dangerous?”<br /><br /></li>
-
-	      <li><a href="comefollowme26.html">Lesson 26</a><br />
-	      “Would they really have buried all their weapons?”<br /><br /></li>
-
-	      <li><a href="comefollowme27.html">Lesson 27</a><br />
-	      “Are Book of Mormon stories about anti-Christs helpful?”<br /><br /></li>
-
-	      <li><a href="comefollowme28.html">Lesson 28</a><br />
-	      “Could the Alma 32 experiment lead down a bad path?”<br /><br /></li>  
-
-<!--	      <li><a href="comefollowme29.html">Lesson 29</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme30.html">Lesson 30</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme31.html">Lesson 31</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme32.html">Lesson 32</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme33.html">Lesson 33</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme34.html">Lesson 34</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme35.html">Lesson 35</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme36.html">Lesson 36</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme37.html">Lesson 37</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme38.html">Lesson 38</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme39.html">Lesson 39</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme40.html">Lesson 40</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme41.html">Lesson 41</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme42.html">Lesson 42</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme43.html">Lesson 43</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme44.html">Lesson 44</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme45.html">Lesson 45</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme46.html">Lesson 46</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme47.html">Lesson 47</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme48.html">Lesson 48</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme49.html">Lesson 49</a><br />
-	      “?”<br /><br /></li>  -->
-
-<!--	      <li><a href="comefollowme50.html">Lesson 50</a><br />
-	      “?”<br /><br /></li>  -->
-
-	    </ol><p class="prevnext">
-<!--      <a href="">&laquo; Previous</a>  -->
-      &nbsp;&nbsp;&nbsp; If I could ask them one question, Index
-      <a href="comefollowme01.html">Next &raquo;</a>
+<p class="prevnext">
+      <a href="comefollowme27.html">&laquo; Previous</a>
+      &nbsp;&nbsp;&nbsp; If I could ask them one question, Lesson 28
+<!--      <a href="comefollowme29.html">Next &raquo;</a>  -->
 </p>
 
   </div> <!-- / .main -->
