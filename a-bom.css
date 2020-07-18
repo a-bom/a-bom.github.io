@@ -66,14 +66,6 @@ body {
   width: 50%;
 }
 
-/* Responsive layout - makes stretch out to 100% of screen width of 800px or smaller */
-@media only screen and (max-width:800px) {
-  /* For mobile phones: */
-  .maincfm {
-    width:100%;
-  }
-}
-
 
 h3 {
   font-family:Verdana,Arial,sans-serif;
@@ -106,13 +98,40 @@ h3 {
 }
 
 
-#main_nav ul {
+
+#menu {
+    background-color: #124;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/*  Simple clearfix.  */
+#menu:before, #menu:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+#menu:after {
+  clear: both;
+}
+
+
+.menudiv {
+    width: 100%;
+    display: block;
+}
+
+ .menudiv ul {
   padding: 0;
   margin: 0;
   background: #124;
+  position: relative;
+  display: block;
 }
 
-#main_nav li {
+
+ .menudiv li {
   float: left;
   position: relative;  /*  Set to ‘relative’ to keep next to parent.  */
   list-style: none;
@@ -121,26 +140,26 @@ h3 {
   transition: 0.3s;
 }
 
-#main_nav li a {
+.menudiv li a {
   display: block;
   padding: 0.5em 1em 0.5em 1em;
   text-decoration: none;
-  white-space: nowrap;
+  white-space: nowrap;  /* This forces the menu items to remain on one line/not wrap */
   color: #fff;
 }
 
 /* Hides ul within ul in the class, so 2nd and 3rd level hidden */
-#main_nav ul ul {
+.menudiv ul ul {
   position: absolute;
   left: 0;
   top: 100%;
   visibility: hidden;
   opacity: 0;
-  z-index: 1;  /* Places the dropdown in front of other elements of menu. */
+  z-index: 2;  /* Places the dropdown in front of other elements of menu. */
 }
 
 /*  Displays the dropdown menu on hover.  */
-#main_nav li:hover > ul {
+.menudiv li:hover > ul {
   visibility: visible;
   opacity: 1;
   /*  next 2 lines soften the transition between lists  */
@@ -149,68 +168,108 @@ h3 {
 }
 
 /* Keeps the sub lists from floating left and not filling entire width of element */
-#main_nav li:hover li {
+.menudiv li:hover li {
   float: none;
 }
 
 /* When you hover over 1st level item, that item and 2nd level of it go shade lighter */
-#main_nav li:hover, #main_nav li:hover li {
+.menudiv li:hover, .menudiv li:hover li {
   background: #247;
 }
 
-/* When you hover over 2nd level item, that item and 3rd level of it go shade lighter */
-#main_nav li li:hover, #main_nav li li:hover li {
+/* When you hover over 2nd level item, that item and 3rd level of it go to this lighter shade */
+.menudiv li li:hover, .menudiv li li:hover li, .menudiv ul ul ul {
   background: #36a;
 }
 
 /* When you hover over 3rd level item, it goes shade lighter */
-#main_nav li li li:hover {
+.menudiv li li li:hover {
   background: #48d;
 }
 
 /*  Displays second level dropdown menus to the right of the first level dropdown menu.  */
-#main_nav ul ul ul {
+.menudiv ul ul ul {
   left: 100%;
-  top: 0;
-/*  max-height: 250px;
-  overflow: auto;  */
+  top: 0%;
+  max-height: 175px;
+  overflow: -webkit-overflow-scrolling:touch;
+  overflow: auto;
 }
 
 /*  Simple clearfix.  */
-#main_nav ul:before, ul:after {
+.menudiv ul:before, ul:after {
   content: " "; /* 1 */
   display: table; /* 2 */
 }
-#main_nav ul:after {
+.menudiv ul:after {
   clear: both;
 }
 
-#main_nav #fbicon {
+
+.menudiv #fbicon {
   float:right;
   margin:0.0em 0.7em 0em 0em;
   background: none;
 }
 
-#main_nav #fbicon a {
-  padding: 0.35em 0em 0em 0em;
+
+.container {
+    background-color: #124;
+    float: left;
+    padding: .5em 1em .5em 1em;
+    display: none;
+    cursor: pointer;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
+
+#menu .container:hover {
+    background-color: #247;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 20px;
+  height: 3px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.bar1 {
+    margin: 1px 0px 3px 0px;
+}
+
+.bar2 {
+    margin: 3px 0px 3px 0px;
+}
+
+.bar3 {
+    margin: 3px 0px 3px 0px;
+}
+
+.change .bar1 {
+  -ms-transform: rotate(-45deg) translate(-4px, 4px);
+  -webkit-transform: rotate(-45deg) translate(-4px, 4px);
+  transform: rotate(-45deg) translate(-4px, 4px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  margin: 3px 0px 3px 0px;
+  -ms-transform: rotate(45deg) translate(-4.5px, -4.5px);
+  -webkit-transform: rotate(45deg) translate(-4.5px, -4.5px);
+  transform: rotate(45deg) translate(-4.5px, -4.5px);
+}
+
 
 #search-box {
   float:right;
   max-width:400px;
   width:80%;
   position:relative;
-  top:0px;
 }
-
-
-/* Responsive layout - makes stretch out to 100% of screen width of 600px or smaller 
-@media screen and (max-width: 600px) {
-  #search-box {
-    width: 100%;
-  }
-} */
-
 
 
 /*  For Annotation Tables  */
@@ -298,14 +357,6 @@ figcaption {
   clear: both;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .columns2 {
-    width: 100%;
-  }
-}
-
-
 
 blockquote {
      font-style: italic;
@@ -352,3 +403,69 @@ blockquote cite {
   background: #abd;
 }
 
+
+/* Responsive layout - menu not sticky below 750px height */
+@media only screen and (max-height:750px) {
+  #menu {
+    position: -webkit-relative;
+    position: relative;
+    top: 0;
+    z-index: 1;
+  }
+}
+
+/* Responsive layout - for smaller devices */
+@media only screen and (max-width:700px) {
+  .maincfm {
+    width:100%;
+  }
+  .columns2 {
+    width: 100%;
+  }
+  #menu {
+    display: block;
+  }
+  .container {
+    background-color: #124;
+    float: left;
+    padding: .5em 1em .5em 1em;
+    display: block;
+    cursor: pointer;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+  }
+  .menudiv {
+    display: none;
+  }
+  .menu.responsive .menudiv ul {
+    padding: 0;
+    margin: 0;
+    background: #124;
+    position: absolute;
+    top: 100%;
+  }
+  .menu.responsive .menudiv li {
+    float: none;
+    position: relative;  /*  Set to ‘relative’ to keep next to parent.  */
+    list-style: none;
+    /*  next 2 lines soften the transition between lists  */
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .menu.responsive .menudiv li a {
+    white-space: normal;  /* This will allow menu items to wrap to next line */
+  }
+  .menu.responsive .menudiv ul ul, .menu.responsive .menudiv ul ul ul {
+    position: absolute;
+    left: 50px;
+    top: 100%;
+    width: 225px;
+ }
+  .menu.responsive div {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
