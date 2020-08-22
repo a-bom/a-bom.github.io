@@ -219,9 +219,7 @@ h3 {
     padding: .5em 1em .5em 1em;
     display: none;
     cursor: pointer;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
+    top: 0; */
     z-index: 2;
 }
 
@@ -446,8 +444,6 @@ blockquote cite {
     padding: .8em 1em .8em 1em;
     display: block;
     cursor: pointer;
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
     z-index: 2;
   }
