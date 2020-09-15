@@ -10,7 +10,7 @@ body {
 }
 
 .heading {
-    background-image: url('study.png');
+    background-image: url('/study.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
