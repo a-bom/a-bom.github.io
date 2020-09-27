@@ -374,8 +374,8 @@ function myFunction(x) {
 	    <ul>
 	      <li><a href="downloads.html">Downloads</a>
 	      </li>
-<!--	      <li><a href="index-por.html">Portuguese Version</a>
-	      </li>	 -->
+	      <li><a href="index-por.html">Portuguese Version</a>
+	      </li>
 	      <li><a>If I Could Ask &hellip; &nbsp;&rsaquo;</a>
 		        <ul>
 		          <li><a href="comefollowme00.html">About & Index</a></li>
@@ -417,6 +417,7 @@ function myFunction(x) {
 		          <li><a href="comefollowme36.html">Lesson 36</a></li>
 		          <li><a href="comefollowme37.html">Lesson 37</a></li>
 		          <li><a href="comefollowme38.html">Lesson 38</a></li>
+		          <li><a href="comefollowme39.html">Lesson 39</a></li>
 		        </ul>
 	      </li>
 	    </ul>
@@ -444,11 +445,44 @@ function myFunction(x) {
 
 
   <div class="main">
+
+    <br />
+    <button type="button" onclick="pickPorEng()" style="width:200px;" title="Clique para mudar para português ou inglês / Click to switch to Portuguese or English">Português / English</button></p>
+  </div>
+
+<script>
+function pickPorEng() {
+  var x = document.getElementById("404por");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+  var x = document.getElementById("404eng");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
       <img src="horse.png" style="float:right; width:30%; min-width:150px;">
+
+    <div id="404eng">
       <h3>404 Error - I'm sorry, like evidence for horses in the Americas during Book of Mormon times (<a href="ann-1_ne18.html#25">1 Ne 18:25</a>), the file you're looking for cannot be found.</h3>
       <p>If you got here by typing the web address into the address bar, please check to make sure you've typed the address correctly.</p>
       <p>If it appears that you got here because of a bad link or missing page on our site, please email us (<a href="mailto:annotatedbom@gmail.com?Subject=Annotated%20Book%20of%20Mormon%20Info" target="_top">annotatedbom@gmail.com</a>) and let us know the address of the page where you clicked on the link and which link it was.</p>
       <p>But, even if you can't find the specific page you were looking for, check out what the site is all <a href="preface.html" title="Go to the Preface for the Annotated Book of Mormon">about</a> or just explore using the navigation bar above. Enjoy!</p>
+    </div> <!-- / #404eng -->
+
+    <div id="404por" style="display:none;" lang="pt">
+      <h3>Erro 404 - Sinto muito; como a evidência de cavalos nas Américas durante a época do Livro de Mórmon (<a href="ann-1_ne18.html#25">1 Ne 18:25</a>), o arquivo que você está procurando não pode ser encontrado.</h3>
+      <p>Se você chegou aqui digitando o endereço da web na barra de endereços, verifique se digitou o endereço corretamente.</p>
+      <p>Se parecer que você chegou aqui por causa de um link inválido ou página faltando no site, envie-nos um e-mail (<a href="mailto:annotatedbom@gmail.com?Subject=Annotated%20Book%20of%20Mormon%20Info" target="_top">annotatedbom@gmail.com</a>) e nos informe o endereço da página onde você clicou no link e de que link se tratava.</p>
+      <p>Mas, mesmo se você não conseguir encontrar a página específica que está procurando, explore <a href="por/preface.html" title="Clique para ir ao Prefácio do Livro de Mórmon Anotado">do que se trata o site</a> ou apenas explore usando a barra de navegação acima. Aproveite!</p>
+    </div> <!-- / #404por -->
+
   </div> <!-- / .main -->
 
 <div id="footer">
