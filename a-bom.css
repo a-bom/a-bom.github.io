@@ -63,11 +63,15 @@ body {
   font-family: "Times New Roman", Times, serif;
   font-size:110%;
   padding: 0 1.5em;
-  width: 50%;
+  width: 60%;
 }
 
 
 h3 {
+  font-family:Verdana,Arial,sans-serif;
+}
+
+h4 {
   font-family:Verdana,Arial,sans-serif;
 }
 
@@ -90,6 +94,16 @@ h3 {
 
 .prevnext a:hover {
   background: #ddd;
+}
+
+.pcomm {
+  border: 1px solid darkblue;
+  background-color: #dcf0ff;
+  padding: 0.5em;
+}
+
+.mycomment {
+  color: green;
 }
 
 .cfmquest {
@@ -310,22 +324,6 @@ div.warn p {
 #annotab p {
     margin:0px;
 }
-#annotab a {
-/*  This code set a max width for hyperlinks and put ellipses at the end where there was over-run. The max width of 10em seemed about equal to 180px on my desktop. */
-    margin-bottom: -0.3em;
-    display: inline-block;
-    max-width: 10em;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-/*  The following allows for line breaking and inserts hyphens when and where appropriate. Not sure I like this better  */
-/*    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;  */
-}
 
 /*  For footer with copyright, email, and disclaimer  */
 #footer {
@@ -416,6 +414,27 @@ blockquote cite {
 }
 
 
+/* Two column table; 1st col align center and 2nd col align left */
+.tabdata3 {
+  border-collapse: collapse;
+  margin: 0em 0em 1em 1em;
+}
+.tabdata3 th:nth-child(1), .tabdata3 td:nth-child(1) { 
+  text-align: center;
+  border: 1px solid #abd;
+  padding: 0.2em;
+} 
+.tabdata3 th:nth-child(2), .tabdata3 td:nth-child(2) {
+  text-align: left;
+  border: 1px solid #abd;
+  padding: 0.2em 0.2em 0.2em 1.5em;
+} 
+.tabdata3 .sumrow, .tabdata3 th {
+  font-weight: bold;
+  background: #abd;
+}
+
+
 /* Responsive layout - menu not sticky below 800px height */
 @media only screen and (max-height:800px) {
   #menu {
@@ -475,10 +494,20 @@ blockquote cite {
     left: 50px;
     top: 100%;
     width: 225px;
- }
+  }
   .menu.responsive div {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  #annotab a {
+/*  This code set a max width for hyperlinks and put ellipses at the end where there was over-run. The max width of 10em seemed about equal to 180px on my desktop. */
+    margin-bottom: -0.3em;
+    display: inline-block;
+    max-width: 10em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }
