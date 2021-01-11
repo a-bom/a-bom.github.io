@@ -512,7 +512,7 @@ blockquote cite {
   }*/
 }
 
-  #annotab a {
+#annotab a {
 /*  This code set a max width for hyperlinks and put ellipses at the end where there was over-run. The max width of 10em seemed about equal to 180px on my desktop. */
     margin-bottom: -0.3em;
     display: inline-block;
