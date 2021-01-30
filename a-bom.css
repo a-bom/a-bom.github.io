@@ -500,24 +500,14 @@ blockquote cite {
     display: block;
     text-align: left;
   }
+}
 
-/*  #annotab a {
-  This code set a max width for hyperlinks and put ellipses at the end where there was over-run. The max width of 10em seemed about equal to 180px on my desktop. 
+/*  This code set a max width for hyperlinks and put ellipses at the end where there was over-run. The max width of 10em seemed about equal to 180px on my desktop.
+  #annotab a {
     margin-bottom: -0.3em;
     display: inline-block;
     max-width: 10em;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-  }*/
-}
-
-#annotab a {
-/*  This code set a max width for hyperlinks and put ellipses at the end where there was over-run. The max width of 10em seemed about equal to 180px on my desktop. */
-    margin-bottom: -0.3em;
-    display: inline-block;
-    max-width: 10em;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-}
+} */
