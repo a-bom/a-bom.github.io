@@ -495,7 +495,7 @@ blockquote cite {
     top: 100%;
     width: 225px;
   }
-  .menu.responsive div {
+  .menu.responsive .menudiv {
     float: none;
     display: block;
     text-align: left;
