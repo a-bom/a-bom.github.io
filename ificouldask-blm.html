@@ -55,19 +55,6 @@
   <div class="bar3"></div>
 </div>
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-</script>
-
-
 <div id="main_nav" class="menudiv">
 
 <ul>
@@ -501,6 +488,18 @@ If this doesn’t seem to make sense, it might help to consider the roots of the
   <p>Copyright &copy; 2020-2021 by Fubeca Publishing</p>
   <p>This is not an official website of The Church of Jesus Christ of Latter-day Saints.</p>
 </div> <!-- / #footer -->
+
+<script>
+function myFunction(x) {
+  x.classList.toggle("change");
+  var x = document.getElementById("menu");
+  if (x.className === "menu") {
+    x.className += " responsive";
+  } else {
+    x.className = "menu";
+  }
+}
+</script>
 
 </body>
 </html>
