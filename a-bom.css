@@ -257,8 +257,6 @@ h4 {
   -ms-transform: rotate(-45deg) translate(-5px, 5px);
   -webkit-transform: rotate(-45deg) translate(-5px, 5px);
   transform: rotate(-45deg) translate(-5px, 5px);
-  box-shadow: 0px 0px 5px white;
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
 .change .bar2 {opacity: 0;}
@@ -268,8 +266,6 @@ h4 {
   -ms-transform: rotate(45deg) translate(-4.5px, -4.5px);
   -webkit-transform: rotate(45deg) translate(-4.5px, -4.5px);
   transform: rotate(45deg) translate(-4.5px, -4.5px);
-  box-shadow: 0px 0px 5px white;
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
 
 
