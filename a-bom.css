@@ -1,5 +1,6 @@
-﻿
-/*  The "box-sizing: border-box" makes a browser not include the padding and border width to the actual width of the displayed element. The asterisk makes it apply to all elements.  */
+﻿/*  The "box-sizing: border-box" makes a browser not include the padding and 
+    border width to the actual width of the displayed element. 
+    The asterisk makes it apply to all elements.  */
 * {
   box-sizing: border-box;
 }
@@ -67,16 +68,11 @@ body {
 }
 
 
-h3 {
-  font-family:Verdana,Arial,sans-serif;
-}
-
-h4 {
+h3, h4 {
   font-family:Verdana,Arial,sans-serif;
 }
 
 .h3annotations {
-  font-family:Verdana,Arial,sans-serif;
   float:left;
   margin-bottom:0em;
 }
@@ -87,9 +83,12 @@ h4 {
   font-size:80%;
 }
 
+.prevnext a, .prevnext span {
+  margin: 0em 1.5em 0em 0em;
+}
+
 .prevnext a {
   text-decoration: none;
-  margin: 0em 0em 0em 1.5em;
 }
 
 .prevnext a:hover {
@@ -225,7 +224,7 @@ h4 {
     float: left;
     display: none;
     cursor: pointer;
-    top: 0; */
+    top: 0;
     z-index: 2;
 }
 
