@@ -52,7 +52,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container">
+<div class="container" onclick="myFunction(this)">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -554,7 +554,7 @@
  </tr>
  <tr>
   <td colspan="2">
-    <img style="float:right; width:100%; max-width:1234px; min-width:600px; display: block; margin-left: auto; margin-right: auto;" src="HenryB3.jpg" alt="Henry B Eyring uses this technique" title="Click image to copy the text seen in the image" id="henryb">
+    <img style="float:right; width:100%; max-width:1234px; min-width:600px; display: block; margin-left: auto; margin-right: auto;" src="HenryB3.jpg" alt="Henry B Eyring uses this technique" title="Click image to copy the text seen in the image" id="henryb" onclick="copyCultText()>
   </td>
  </tr>
  <tr>
@@ -952,7 +952,6 @@ function myFunction(x) {
   }
 }
 
-document.getElementById("henryb").addEventListener("click", copyCultText)
 function copyCultText() {
   /* Text displayed in image to be copied */
   var imgText = "YOU CAN PRAY TO KNOW HIS WILL,\nand with the honest desire to do whatever He asks you to do, you will receive an answer.\nPresident Henry B. Eyring\nYou Are Not Alone in the Work\nOctober 2015 General Priesthood Session\r\rA COMMON TECHNIQUE AMONG RELIGIOUS CULTS\nis to instruct people to ask God what He wants them to do. Members are exhorted to study and pray in order to know God’s will for them. It is always implied that joining the group is God’s will and leaving the group is betraying it. Of course, if a person tells the cult leader that God is warning him to leave, this will not be accepted as valid.\nSteven Hassan\nCombatting Cult Mind Control, p. 70, 1988\nwww.freedomofmind.com";
