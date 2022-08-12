@@ -19,5 +19,5 @@ function copyCultText() {
   navigator.clipboard.writeText(imgText);
   
   /* Alert the copied text */
-  alert("Copied the text: " + copyText.value);
+  alert("Copied the following text:\r\r" + imgText);
 }
