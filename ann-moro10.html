@@ -52,7 +52,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container" onclick="myFunction(this)">
+<div class="container" id="hamburger">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -554,7 +554,7 @@
  </tr>
  <tr>
   <td colspan="2">
-    <img style="float:right; width:100%; max-width:1234px; min-width:600px; display: block; margin-left: auto; margin-right: auto;" src="HenryB3.jpg" alt="Henry B Eyring uses this technique" title="Click image to copy the text seen in the image" id="henryb" onclick="copyCultText()">
+    <img style="float:right; width:100%; max-width:1234px; min-width:200px; display: block; margin-left: auto; margin-right: auto;" src="HenryB3.jpg" alt="Henry B Eyring uses this technique." title="Click image to copy the text seen in the image" id="henryb">
   </td>
  </tr>
  <tr>
@@ -564,11 +564,11 @@
   <td>
   <p>The above infographic with Mormon apostle and First Presidency member, Henry B. Eyring, shows the Mormon Church teaches that you can pray to know God’s will. But, this teaching is apparently a common technique used among religious cults. Why would a religious cult urge people to ask God His will about following the cult? Surely the ultimate source of truth would help people avoid these high-demand, harmful groups. Well, let’s consider some real-world implications of the Book of Mormon promise.<br>
   <br>
-  If this process doesn’t work to let you know that the Book of Mormon is God’s word and will, then it is your fault. Built right into verse 4 are reasons believers can always use to explain why a person didn’t get the “right” answer. The person who doesn’t get the accepted answer didn’t ask with enough sincerity, real intent, and/or faith. So, if you set up any truth claim with this process as the way to gain knowledge of the claim, the believers will always think they know why nonbelievers didn’t get the “right” answer. This type of situation is often called a double bind&mdash;a situation in which you are given a choice or dilemma, but there is no good choice. Either way, you fail. (see “How to Gain Knowledge” diagram below)
+  If this process doesn’t work to let you know that the Book of Mormon is God’s word and will, then (from a believer’s point of view) it is your fault. Built right into verse 4 are reasons believers can always use to explain why a person didn’t get the “right” answer. According to this verse, a person who doesn’t get the accepted answer didn’t ask with enough sincerity, real intent, and/or faith. So, if you set up any truth claim with this process as the way to gain knowledge of the claim, the believers will always think they know why nonbelievers didn’t get the “right” answer. This type of situation is often called a double bind&mdash;a situation in which you are given a choice or dilemma, but there is no good choice. You can conclude their claim is not true, and you will be found guilty by believers of failure of sincerity, intent or faith; or you can continue trying to believe even though there is no rational reason to continue. Either way, you fail. (see “How to Gain Knowledge” diagram below)</p>
  <tr>
   <td colspan="2">
     <figure style="width:100%; margin: 0em 0em 0.5em 0em;">
-    <img style="width:100%; max-width:1299px; min-width:700px; display: block; margin-left: auto; margin-right: auto;" src="Promise_Flow_2.png" alt="Book of Mormon Promise Flow Diagram" id="promflowimg">
+    <img style="width:100%; max-width:1299px; min-width:600px; display: block; margin-left: auto; margin-right: auto;" src="Promise_Flow_2.png" alt="Book of Mormon Promise Flow Diagram" id="promflowimg" id="henryb">
     </figure>
   </td>
  </tr>
@@ -584,7 +584,7 @@
   Jehovah. What kind of effect or influence might this have on a person
   studying with the Jehovah’s Witnesses?</p>
   <p>&nbsp;</p>
-  <p>Which leader said this about asking God if a teaching is
+  <p>The following is a real-life example. Which leader said this about asking God if a teaching is
   true?</p>
   <blockquote>I hope for your sake that you at least ponder this—that
   you go into the privacy of your closet. Don’t ask your neighbors, your
@@ -941,28 +941,7 @@
   <p>This is not an official website of The Church of Jesus Christ of Latter-day Saints.</p>
 </div> <!-- / #footer -->
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-
-function copyCultText() {
-  /* Text displayed in image to be copied */
-  var imgText = "YOU CAN PRAY TO KNOW HIS WILL,\nand with the honest desire to do whatever He asks you to do, you will receive an answer.\nPresident Henry B. Eyring\nYou Are Not Alone in the Work\nOctober 2015 General Priesthood Session\r\rA COMMON TECHNIQUE AMONG RELIGIOUS CULTS\nis to instruct people to ask God what He wants them to do. Members are exhorted to study and pray in order to know God’s will for them. It is always implied that joining the group is God’s will and leaving the group is betraying it. Of course, if a person tells the cult leader that God is warning him to leave, this will not be accepted as valid.\nSteven Hassan\nCombatting Cult Mind Control, p. 70, 1988\nwww.freedomofmind.com";
-
-  /* Copy the text */
-  navigator.clipboard.writeText(imgText);
-  
-  /* Alert the copied text */
-  alert("The following text was just copied:\r\r" + imgText);
-}
-</script>
+<script src="a-bom.js"></script>
 
 </body>
 </html>
