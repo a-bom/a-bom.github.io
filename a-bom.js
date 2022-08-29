@@ -1,4 +1,4 @@
-document.getElementById("hamburger").addEventListener("click", hamburgerChange)
+document.getElementById("hamburger").addEventListener("click", hamburgerChange(this))
 
 function hamburgerChange(x) {
   x.classList.toggle("change");
