@@ -1,8 +1,8 @@
-document.getElementById("hamburger").addEventListener("click", hamburgerChange())
+document.getElementById("hamburger").addEventListener("click", hamburgerChange)
 
 function hamburgerChange() {
-  let x = document.getElementById("hamburger");
-  x.classList.toggle("change");
+  let y = document.getElementById("hamburger");
+  y.classList.toggle("change");
   var x = document.getElementById("menu");
   if (x.className === "menu") {
     x.className += " responsive";
