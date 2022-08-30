@@ -322,7 +322,8 @@ h3, h4 {
    The box seemed as if it was inheriting padding from something
    else that made it hard to use.*/
 #gs_tti50 {
-  padding: 2px 9px;
+  height:2em;
+  padding: 0px 9px;
 }
 
 
