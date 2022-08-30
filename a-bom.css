@@ -318,6 +318,13 @@ h3, h4 {
   position:relative;
 }
 
+/* I think this id is for the box in which you enter search text.
+   The box seemed as if it was inheriting padding from something
+   else that made it hard to use.*/
+#gs_tti50 {
+  padding: 2px 9px;
+}
+
 
 .warn {
   display: flex;
@@ -514,9 +521,9 @@ blockquote cite {
     top: 100%;
     width: 100%;
   }
-.menu.responsive .menudiv ul ul {
+  .menu.responsive .menudiv ul ul {
     width: 80%;
-}
+  }
   .menu.responsive .menudiv li {
     float: none;
     position: relative;  /*  Set to ‘relative’ to keep next to parent.  */
@@ -543,6 +550,7 @@ blockquote cite {
   #search-box {
     width:100%;
     max-width:800px;
+  }
 }
 
 
