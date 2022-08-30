@@ -1,4 +1,4 @@
-document.getElementById("hamburger").addEventListener("click", hamburgerChange)
+document.getElementById("hamburger").addEventListener("click", hamburgerChange);
 
 function hamburgerChange() {
   let y = document.getElementById("hamburger");
@@ -11,7 +11,7 @@ function hamburgerChange() {
   }
 }
 
-document.getElementById("henryb").addEventListener("click", copyCultText)
+document.getElementById("henryb").addEventListener("click", copyCultText);
 
 function copyCultText() {
   /* Get the text field */
