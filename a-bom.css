@@ -46,6 +46,7 @@ body {
   font-size:110%;
   padding: 0 1.5em;
   position: relative;
+  clear:both;
 }
 
 #dedicate {
@@ -321,9 +322,8 @@ h3, h4 {
 /* I think this id is for the box in which you enter search text.
    The box seemed as if it was inheriting padding from something
    else that made it hard to use.*/
-#gs_tti50 {
-  height:2em;
-  padding: 0px 9px;
+#gsc-i-id1 {
+  box-sizing: content-box;
 }
 
 
