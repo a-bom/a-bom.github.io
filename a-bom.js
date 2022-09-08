@@ -37,7 +37,7 @@ function copyCultTextEng() {
   // Copies the text:
   navigator.clipboard.writeText(imgTextEng);
   // Alert of the copied text:
-  alert("The following text was just copied:\r\r" + imgTextEng);
+  alert("When you close this computer window, the following text will be copied to your clipboard:\r\r" + imgTextEng);
 }
 
 // Copies the text found in the henryb image (const imgTextPor) to clipboard.
@@ -45,7 +45,7 @@ function copyCultTextPor() {
   // Copies the text:
   navigator.clipboard.writeText(imgTextPor);
   // Alert of the copied text:
-  alert("O texto a seguir foi copiado:\r\r" + imgTextPor);
+  alert("Ao fechar esta janela do computador, o seguinte texto será copiado para a área de transferência:\r\r" + imgTextPor);
 }
 
 
