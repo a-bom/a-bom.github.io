@@ -51,7 +51,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container" onclick="myFunction(this)">
+<div class="container" id="hamburger">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -500,7 +500,7 @@
 
   <li>“And notwithstanding the many labors which I have performed in the church, I have never received so much as even one senine for my labor [in the church]” (<a href="ann-alma30.html#33">Alma 30:33</a>, but read verses 32-35 for context of the evils of priestcraft).</li>
 
-  <li>But nobody’s perfect right? I mean, if only Alma had the example of modern profits (homonym choice intended), he might have understood that the power of a six-figure income combined with compounding on investments righteously justifies priestcraft (<a href="https://www.deseret.com/2017/1/10/20603771/mormonleaks-dumps-four-new-documents-about-lds-church" target="_blank">Deseret News</a> and <a href="https://mormonleaks.io/newsroom/2017/01/09/mormonleaks-releases-four-documents/" target="_blank">Mormon Leaks</a>).</li>
+  <li>But nobody’s perfect right? I mean, if only Alma had the example of modern profits (homonym choice intended), he might have understood that the power of a six-figure income combined with compounding on investments righteously justifies priestcraft (<a href="https://www.deseret.com/2017/1/10/20603771/mormonleaks-dumps-four-new-documents-about-lds-church" target="_blank">Deseret News</a> and <a href="https://mormonleaks.io/newsroom/2017/01/09/mormonleaks-releases-four-documents//" target="_blank">Mormon Leaks</a>).</li>
 
   <li>All kidding aside, what do you think? Is Alma the Younger a <em>credible</em> character?</li>
 
@@ -541,17 +541,7 @@ Is this all sober history ... or is it a wonder-tale of an immature mind, uncons
   <p>This is not an official website of The Church of Jesus Christ of Latter-day Saints.</p>
 </div> <!-- / #footer -->
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-</script>
+<script src="a-bom.js"></script>
 
 </body>
 </html>

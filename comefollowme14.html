@@ -51,7 +51,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container" onclick="myFunction(this)">
+<div class="container" id="hamburger">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -475,7 +475,7 @@
   <li>“The crowning event recorded in the Book of Mormon is the personal ministry of the Lord Jesus Christ among the Nephites soon after His resurrection” (<a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/introduction?lang=eng#p3" target="_blank">Introduction, Book of Mormon</a>)</li>
   <li>This seems to be reiterated in this statement from the <a href="https://www.churchofjesuschrist.org/study/manual/come-follow-me-for-individuals-and-families-book-of-mormon-2020/14?lang=eng" target="_blank">Come Follow Me lesson for Easter</a>: “Some families have found that studying the account of the resurrected Savior’s visit to the Americas is especially meaningful during the Easter season.”</li>
   <li>But I remember reading the Book of Mormon as a non-Mormon the first time, thinking that it just seemed to be rehashing things from the Bible. Even when I read about Christ’s visit to the Nephites, I wasn’t impressed by it.</li>
-  <li>A couple decades later, as a devout, believing Mormon, I was reading the <i>Left Behind</i> series of books written about Christian dispensationalist End Times. What they probably thought was the “crowning event” of the book series was their portrayal of the second coming of Christ. To me it fell horribly flat. It was like a copy-and-paste fest from the Bible into their book. Their Jesus seemed like an uptight, two-dimensional version of the New Testament Jesus. I couldn’t help but notice that I felt the same way about the portrayal of Jesus in the Americas. That was uncomfortable as a believer.</li>
+  <li>A couple decades later, as a devout, believing Mormon, I was reading the <i>Left Behind</i> series of books written about Christian dispensationalist End Times. What they probably thought was the “crowning event” of the book series was their portrayal of the second coming of Christ. To me it fell horribly flat. It was like a copy-and-paste fest from the Bible into their book. Their Jesus seemed like an uptight, two-dimensional version of the New Testament Jesus. I couldn’t help but notice that I felt the same way about the Book of Mormon portrayal of Jesus in the Americas. That was uncomfortable as a believer.</li>
   <li>Add to this the various anachronisms, contradictions with the Joseph Smith Translation of the Bible, and other problems in the chapters <a href="ann-3_ne09.html">3 Nephi 9-18</a>, and I think the account of Jesus in the Americas becomes more of a hindrance to belief that a faith builder.</li>
   <li>But, my story is just anecdotal. Maybe it’s because I wasn’t raised in the Church. Maybe I’m the odd one. I’d love to hear your thoughts on this, whether you’re a believer or not. Maybe some of you were and are fully impressed and inspired by these chapters of the Book of Mormon.</li>
 </ul>
@@ -496,17 +496,7 @@
   <p>This is not an official website of The Church of Jesus Christ of Latter-day Saints.</p>
 </div> <!-- / #footer -->
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-</script>
+<script src="a-bom.js"></script>
 
 </body>
 </html>
