@@ -53,7 +53,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container" onclick="myFunction(this)">
+<div class="container" id="hamburger">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -713,17 +713,7 @@
   <p>Este não é um site oficial de A Igreja de Jesus Cristo dos Santos dos Últimos Dias.</p>
 </div>
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-</script>
+<script src="/a-bom.js"></script>
 
 </body>
 </html>
