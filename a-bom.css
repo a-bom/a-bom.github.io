@@ -478,6 +478,16 @@ blockquote cite {
   background: #abd;
 }
 
+#hidebtn {
+  width:240px;
+  min-height:3.5em;
+  font-size:0.85em;
+}
+
+#hide {
+  display:none;
+}
+
 
 /* Responsive layout - menu not sticky below 800px height */
 @media only screen and (max-height:800px) {

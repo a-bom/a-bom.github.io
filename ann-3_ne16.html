@@ -52,7 +52,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container" onclick="myFunction(this)">
+<div class="container" id="hamburger">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -526,7 +526,7 @@
   Mormon). Yet the Church’s essay on the “translation” of the Book of Mormon
   currently admits that the “translation” was done without reference to the
   plates or any other writing. What was the point of writing this down then? (<a
-  href="https://www.lds.org/topics/book-of-mormon-translation?lang=eng" target="_blank">Book of Mormon Translation</a>)</p>
+  href="https://www.churchofjesuschrist.org/study/manual/gospel-topics-essays/book-of-mormon-translation?lang=eng" target="_blank">Book of Mormon Translation</a>)</p>
   </td>
  </tr>
  <tr>
@@ -716,17 +716,7 @@
   <p>This is not an official website of The Church of Jesus Christ of Latter-day Saints.</p>
 </div> <!-- / #footer -->
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-</script>
+<script src="a-bom.js"></script>
 
 </body>
 </html>

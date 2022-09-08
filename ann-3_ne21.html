@@ -52,7 +52,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container" onclick="myFunction(this)">
+<div class="container" id="hamburger">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -713,9 +713,9 @@
   <p>MormonLeaks provided documentation that as of January
   2014, the base living allowance given to LDS general authorities was $120,000
   annually</p>
-  <p>(<a href="https://www.deseretnews.com/article/865670786/MormonLeaks-dumps-four-new-documents-about-LDS-Church.html" target="_blank">DeseretNews Article</a><br>
+  <p>(<a href="https://www.deseret.com/2017/1/10/20603771/mormonleaks-dumps-four-new-documents-about-lds-church" target="_blank">DeseretNews Article</a><br>
   and<br>
-  <a href="https://mormonleaks.io/newsroom/2017/01/09/mormonleaks-releases-four-documents" target="_blank">MormonLeaks documents</a>).</p>
+  <a href="https://mormonleaks.io/newsroom/2017/01/09/mormonleaks-releases-four-documents/" target="_blank">MormonLeaks documents</a>).</p>
   </td>
  </tr>
  <tr>
@@ -834,17 +834,7 @@
   <p>This is not an official website of The Church of Jesus Christ of Latter-day Saints.</p>
 </div> <!-- / #footer -->
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-</script>
+<script src="a-bom.js"></script>
 
 </body>
 </html>

@@ -52,7 +52,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container" onclick="myFunction(this)">
+<div class="container" id="hamburger">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -473,12 +473,12 @@
   </td>
   <td>
   <p>In chapter nine, Nephi discusses how he was commanded to
-  make a separate set of plates for a wise purpose, “which purpose I know not”
+  make a separate set of plate for a wise purpose, “which purpose I know not”
   (verse 5). This sounds prophetic considering how Joseph Smith lost the 116
   pages that he said were translated from the first set of plates, but keep in
-  mind that Joseph claims he translated this chapter long after the lost 116
-  pages. Without the presupposition that the narrative of the Church is
-  accurate, this seems explanatory, not prophetic.</p>
+  mind that Joseph translated this chapter long after the lost 116 pages.
+  Without the presupposition that the narrative of the Church is accurate, this
+  seems explanatory, not prophetic.</p>
   </td>
  </tr>
  <tr>
@@ -561,17 +561,7 @@
   <p>This is not an official website of The Church of Jesus Christ of Latter-day Saints.</p>
 </div> <!-- / #footer -->
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-</script>
+<script src="a-bom.js"></script>
 
 </body>
 </html>
