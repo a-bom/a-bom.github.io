@@ -51,7 +51,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container" onclick="myFunction(this)">
+<div class="container" id="hamburger">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -465,24 +465,13 @@
   <div class="warn">
     <h3 class="h3annotations">Warning:</h3>
     <p>I discuss sexual assault and victim shaming in this post. If this might be too distressing to you, please move on to my “Other observations about this lesson’s reading” or skip this post altogether. Otherwise, click the button below to read the post.<br /><br />
-    <button type="button" onclick="myFunctionHide(this)" style="width:240px; min-height:3.5em; font-size:0.85em;">Click to show or hide <br />the sensitive information</button></p>
+    <button type="button" id="hidebtn">Click to show or hide <br />the sensitive information</button></p>
   </div>
-
-<script>
-function myFunctionHide(x) {
-  var x = document.getElementById("hide");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-</script>
 
     <p>For Dec 7-13, 2020<br />
     <a href="ann-moro07.html">Moroni 7-9</a></p>
 
-<div id="hide" style="display:none;">
+<div id="hide">
 
 <p>If I wanted to encourage thought and try to understand devout believers better, I might ask:</p>
 <p class="cfmquest">“Do <em>you</em> think they’ve been deprived of chastity and virtue?”</p>
@@ -565,17 +554,7 @@ function myFunctionHide(x) {
   <p>This is not an official website of The Church of Jesus Christ of Latter-day Saints.</p>
 </div> <!-- / #footer -->
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-</script>
+<script src="a-bom.js"></script>
 
 </body>
 </html>
