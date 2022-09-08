@@ -54,7 +54,7 @@
 
 <div id="menu" class="menu">
 
-<div class="container" onclick="myFunction(this)">
+<div class="container" id="hamburger">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
@@ -477,17 +477,24 @@
     <div id="latest">
       <h4>What’s new?</h4>
       <ul>
-        <li>Latest essay, <a href="banned.html"><strong>“The Mormon Priesthood and Temple Ban on Blacks”</strong></a>, was posted on 1 June 2022, in recognition of the 44th anniversary of the “revelation” that removed the ban.</li>
-        <li>A few other essays I recently posted</li>
+
+        <!-- <li>Latest essay, <a href="banned.html"><strong>“The Mormon Priesthood and Temple Ban on Blacks”</strong></a>, was posted on 1 June 2022, in recognition of the 44th anniversary of the “revelation” that removed the ban.</li>
+        <li>A few other essays I recently posted
           <ul>
             <li><a href="problist.html">Problem List my Bishop Requested</a></li>
             <li><a href="time.html">Mormon Time Commitments</a></li>
             <li><a href="perfection.html">Did I Expect Leaders to be Perfect?</a></li>
             <li><a href="non-disclosure.html">Pitfalls of Non-disclosure</a></li>
             <li><a href="ificouldask-blm.html">Since Black Lives Matter &hellip;</a></li>
-          </ul>
-        <li><a href="https://korihor.info/" target="_blank" style="font-size:1.5em;font-weight:bold;">Project Korihor</a> &ndash; I’ve joined Project Korihor, a crowd-sourcing site for annotating all Mormon scriptures. It’s kind of like Wikipedia for Mormon scriptures. We recently published my Book of Mormon annotations on the Project Korihor site, and I’ll be contributing annotations to other scriptures there. I’ll continue to maintain this site, but Project Korihor can add to the understanding of Mormon scripture well beyond what my Annotated Book of Mormon could ever do. In addition to including all standard works of the Church, Project Korihor can provide observations from a broader spectrum of interest and expertise because it invites multiple contributors. Please take a look, get the word out, and consider registering to share your scriptural observations with the world.</li>
+          </ul> 
+        </li>-->
+
+        <li><a href="https://korihor.info" target="_blank" style="font-size:1.5em;font-weight:bold;">Project Korihor</a> &ndash; I’ve joined Project Korihor, a crowd-sourcing site for annotating all Mormon scriptures. It’s kind of like Wikipedia for Mormon scriptures. We recently published my Book of Mormon annotations on the Project Korihor site, and I’ll be contributing annotations to other scriptures there. I’ll continue to maintain this site, but Project Korihor can add to the understanding of Mormon scripture well beyond what my Annotated Book of Mormon could ever do. In addition to including all standard works of the Church, Project Korihor can provide observations from a broader spectrum of interest and expertise because it invites multiple contributors. Please take a look, get the word out, and consider registering to share your scriptural observations with the world.</li>
+        <li><a href="ann-moro10.html" style="font-size:1.5em;font-weight:bold;">Annotation revision for Moroni 10:4, the Book of Mormon Promise.</a><br>
+          I think my observations for this verse may be the most important of all my annotations. The Book of Mormon promise of personal revelation is seen as the bedrock of their faith, yet I think calling it a foundation of sand would be generous, so I tried to improve my explanation. Here’s a new infographic that sums up the problem nicely, but click <a href="ann-moro10.html">here</a> to read the full explanation.</li>
+        <li style="list-style-type: none;"><img style="width:100%; max-width:538px; min-width:300px;" src="HenryB4.jpg" alt="Henry B Eyring uses this technique." title="Click image to copy the text seen in the image" id="henryb"></li>
       </ul>
+
     </div> <!-- / #latest -->
 
   </div> <!-- / .main -->
@@ -497,17 +504,7 @@
   <p>This is not an official website of The Church of Jesus Christ of Latter-day Saints.</p>
 </div> <!-- / #footer -->
 
-<script>
-function myFunction(x) {
-  x.classList.toggle("change");
-  var x = document.getElementById("menu");
-  if (x.className === "menu") {
-    x.className += " responsive";
-  } else {
-    x.className = "menu";
-  }
-}
-</script>
+<script src="a-bom.js"></script>
 
 </body>
 </html>
