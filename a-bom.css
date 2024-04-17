@@ -489,8 +489,8 @@ blockquote cite {
 }
 
 
-/* Responsive layout - menu not sticky below 800px height */
-@media only screen and (max-height:800px) {
+/* Responsive layout - menu not sticky below 600px height */
+@media only screen and (max-height:600px) {
   #menu {
     position: -webkit-relative;
     position: relative;
@@ -501,7 +501,7 @@ blockquote cite {
 
 
 /* Responsive layout - for smaller devices */
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:700px) {
   .maincfm {
     width:100%;
   }
